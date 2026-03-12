@@ -6,5 +6,5 @@ fixtures
 scripts
 *.md
 !README.md
-tsconfig.json
+vitest.config.ts
 .env*
