@@ -1,13 +1,35 @@
-# Privacy Policy
+# Privacy & Data Handling
 
-## dutch-standards-mcp
+## Remote Endpoint
+
+When using the hosted endpoint, your queries are processed by:
+
+- **Vercel** (serverless infrastructure) — see Vercel's privacy policy
+- **Hetzner** (Docker deployment) — see Hetzner's privacy policy
+- **Your AI client** (Claude, ChatGPT, etc.) — see their respective privacy policies
+
+No query data is logged, stored, or retained by the MCP server itself. The server
+is stateless — each request is processed and discarded.
+
+## Local Installation
+
+For maximum privacy, use the local npm package:
+
+    npx @ansvar/dutch-standards-mcp
+
+This runs entirely on your machine. No network requests are made except to your
+local AI client.
+
+## Data Collection
 
 This MCP server:
+- Does **not** collect, store, or transmit user queries
+- Does **not** use cookies, analytics, or tracking
+- Does **not** require authentication or user accounts
+- Contains **only** publicly available data from authoritative sources
 
-- **Does NOT collect any personal data**
-- **Does NOT track usage or analytics**
-- **Does NOT make external network requests** (all data is bundled locally)
-- **Does NOT store any user input**
-- **Does NOT use cookies or session identifiers**
+## Data Sources
 
-All data is served from a local SQLite database bundled with the package. No data leaves your machine when using this tool via stdio. When deployed as HTTP, request logs may be kept by the hosting provider.
+All data in this MCP is sourced from publicly available Dutch government
+publications, open-source repositories, and standards body reference data. See
+`sources.yml` for the full list of data origins and their licenses.

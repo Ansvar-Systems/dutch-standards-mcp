@@ -1,126 +1,196 @@
+schema_version: "1.0"
+mcp_name: "Dutch Standards MCP"
+category: "domain_intelligence"
+
 sources:
   - name: "BIO2 (Baseline Informatiebeveiliging Overheid)"
     authority: "CIP/BZK"
+    official_url: "https://bio-overheid.nl"
+    api_url: "https://github.com/MinBZK/Baseline-Informatiebeveiliging-Overheid"
+    retrieval_method: "GIT_CLONE"
+    format: "Markdown/ReSpec"
+    authentication: "none"
+    update_frequency: "annual"
     version: "2.0"
     effective_date: "2024-01-01"
-    source_type: "github"
-    source_url: "https://github.com/MinBZK/Baseline-Informatiebeveiliging-Overheid"
-    api_url: null
-    retrieval_method: "Clone repo, parse Markdown/ReSpec"
-    refresh_frequency: "annual"
     license:
       type: "CC0-1.0"
       url: "https://github.com/MinBZK/Baseline-Informatiebeveiliging-Overheid/blob/main/LICENSE"
-      commercial_use: true
+      summary: "Public domain — no restrictions on use"
     coverage:
       scope: "Government-wide baseline controls (BBN1/2/3)"
-      item_count: "~93"
-      language: "nl+en"
+      version: "BIO 2.0"
+      item_count: 160
+    languages:
+      - "nl"
+      - "en"
 
   - name: "DNB Good Practice Information Security 2023"
     authority: "DNB"
+    official_url: "https://www.dnb.nl/en/sector-information/supervision-stages/ongoing-supervision/good-practices/"
+    api_url: null
+    retrieval_method: "BULK_DOWNLOAD"
+    format: "PDF"
+    authentication: "none"
+    update_frequency: "annual"
     version: "2023"
     effective_date: "2023-01-01"
-    source_type: "pdf"
-    source_url: "https://www.dnb.nl/en/sector-information/supervision-stages/ongoing-supervision/good-practices/"
-    api_url: null
-    retrieval_method: "PDF download + manual extraction"
-    refresh_frequency: "annual"
     license:
       type: "Public sector publication"
       url: null
-      commercial_use: true
+      summary: "Public sector guidance — free to reference"
     coverage:
       scope: "Financial sector IT security controls"
-      item_count: "~58"
-      language: "nl+en"
+      version: "2023 edition"
+      item_count: 58
+    languages:
+      - "nl"
+      - "en"
 
-  - name: "NEN 7510:2017 / NEN 7512:2022 / NEN 7513:2023"
+  - name: "NEN 7510:2017"
     authority: "NEN"
-    version: "7510:2017 / 7512:2022 / 7513:2023"
-    effective_date: "2023-01-01"
-    source_type: "pdf"
-    source_url: "https://www.nen.nl/nen-7510-2017-nl-245398"
+    official_url: "https://www.nen.nl/nen-7510-2017-nl-245398"
     api_url: null
-    retrieval_method: "PDF from NEN Connect (free preview) + manual extraction"
-    refresh_frequency: "5-year cycle"
+    retrieval_method: "BULK_DOWNLOAD"
+    format: "PDF"
+    authentication: "none"
+    update_frequency: "manual"
+    version: "2017"
+    effective_date: "2017-01-01"
     license:
       type: "NEN standard (extracted reference data)"
       url: "https://www.nen.nl/en/terms-of-use"
-      commercial_use: true
+      summary: "Reference data extracted — control IDs, titles, categories"
     coverage:
       scope: "Healthcare information security controls"
-      item_count: "~200"
-      language: "nl"
+      version: "NEN 7510:2017"
+      item_count: 113
+    languages:
+      - "nl"
+
+  - name: "NEN 7512:2022"
+    authority: "NEN"
+    official_url: "https://www.nen.nl/nen-7512-2022-nl-291955"
+    api_url: null
+    retrieval_method: "BULK_DOWNLOAD"
+    format: "PDF"
+    authentication: "none"
+    update_frequency: "manual"
+    version: "2022"
+    effective_date: "2022-01-01"
+    license:
+      type: "NEN standard (extracted reference data)"
+      url: "https://www.nen.nl/en/terms-of-use"
+      summary: "Reference data extracted — control IDs, titles, categories"
+    coverage:
+      scope: "Healthcare data exchange trust controls"
+      version: "NEN 7512:2022"
+      item_count: 28
+    languages:
+      - "nl"
+
+  - name: "NEN 7513:2023"
+    authority: "NEN"
+    official_url: "https://www.nen.nl/nen-7513-2023-nl-308988"
+    api_url: null
+    retrieval_method: "BULK_DOWNLOAD"
+    format: "PDF"
+    authentication: "none"
+    update_frequency: "manual"
+    version: "2023"
+    effective_date: "2023-01-01"
+    license:
+      type: "NEN standard (extracted reference data)"
+      url: "https://www.nen.nl/en/terms-of-use"
+      summary: "Reference data extracted — control IDs, titles, categories"
+    coverage:
+      scope: "Healthcare logging and audit trail controls"
+      version: "NEN 7513:2023"
+      item_count: 24
+    languages:
+      - "nl"
 
   - name: "NCSC-NL ICT Security Guidelines for Web Applications"
     authority: "NCSC-NL"
+    official_url: "https://www.ncsc.nl/documenten/publicaties/2019/mei/01/ict-beveiligingsrichtlijnen-voor-webapplicaties"
+    api_url: null
+    retrieval_method: "BULK_DOWNLOAD"
+    format: "PDF"
+    authentication: "none"
+    update_frequency: "annual"
     version: "2023"
     effective_date: "2023-01-01"
-    source_type: "pdf"
-    source_url: "https://www.ncsc.nl/documenten/publicaties/2019/mei/01/ict-beveiligingsrichtlijnen-voor-webapplicaties"
-    api_url: null
-    retrieval_method: "PDF download + manual extraction"
-    refresh_frequency: "annual"
     license:
-      type: "Public sector publication (CC BY 4.0)"
+      type: "CC BY 4.0"
       url: "https://www.ncsc.nl/copyright"
-      commercial_use: true
+      summary: "Creative Commons Attribution — free to use with attribution"
     coverage:
       scope: "Web application security requirements"
-      item_count: "~200"
-      language: "nl"
-
-  - name: "DigiD ICT Security Assessment Normenkader 3.0"
-    authority: "Logius"
-    version: "3.0"
-    effective_date: "2023-01-01"
-    source_type: "pdf"
-    source_url: "https://www.logius.nl/domeinen/toegang/digid/documentatie"
-    api_url: null
-    retrieval_method: "PDF download + manual extraction"
-    refresh_frequency: "annual"
-    license:
-      type: "Public sector publication"
-      url: null
-      commercial_use: true
-    coverage:
-      scope: "21 security norms for DigiD connection holders"
-      item_count: "21"
-      language: "nl"
+      version: "2023 edition"
+      item_count: 64
+    languages:
+      - "nl"
 
   - name: "NCSC-NL Security Guidelines for TLS"
     authority: "NCSC-NL"
+    official_url: "https://www.ncsc.nl/documenten/publicaties/2021/januari/19/ict-beveiligingsrichtlijnen-voor-transport-layer-security-2.1"
+    api_url: null
+    retrieval_method: "BULK_DOWNLOAD"
+    format: "PDF"
+    authentication: "none"
+    update_frequency: "annual"
     version: "2.1"
     effective_date: "2021-01-01"
-    source_type: "pdf"
-    source_url: "https://www.ncsc.nl/documenten/publicaties/2021/januari/19/ict-beveiligingsrichtlijnen-voor-transport-layer-security-2.1"
-    api_url: null
-    retrieval_method: "PDF download + manual extraction"
-    refresh_frequency: "annual"
     license:
-      type: "Public sector publication (CC BY 4.0)"
+      type: "CC BY 4.0"
       url: "https://www.ncsc.nl/copyright"
-      commercial_use: true
+      summary: "Creative Commons Attribution — free to use with attribution"
     coverage:
       scope: "TLS configuration recommendations"
-      item_count: "~50"
-      language: "nl+en"
+      version: "v2.1"
+      item_count: 39
+    languages:
+      - "nl"
+      - "en"
+
+  - name: "DigiD ICT Security Assessment Normenkader 3.0"
+    authority: "Logius"
+    official_url: "https://www.logius.nl/domeinen/toegang/digid/documentatie"
+    api_url: null
+    retrieval_method: "BULK_DOWNLOAD"
+    format: "PDF"
+    authentication: "none"
+    update_frequency: "annual"
+    version: "3.0"
+    effective_date: "2023-01-01"
+    license:
+      type: "Public sector publication"
+      url: null
+      summary: "Public sector guidance — free to reference"
+    coverage:
+      scope: "21 security norms for DigiD connection holders"
+      version: "Normenkader 3.0"
+      item_count: 21
+    languages:
+      - "nl"
 
   - name: "Logius NLGov REST API Design Rules"
     authority: "Logius"
+    official_url: "https://publicatie.centrumvoorstandaarden.nl/api/adr/"
+    api_url: "https://github.com/Logius-standaarden/API-Design-Rules"
+    retrieval_method: "GIT_CLONE"
+    format: "ReSpec/HTML"
+    authentication: "none"
+    update_frequency: "monthly"
     version: "2.0"
     effective_date: "2024-01-01"
-    source_type: "github"
-    source_url: "https://github.com/Logius-standaarden/API-Design-Rules"
-    api_url: "https://github.com/Logius-standaarden"
-    retrieval_method: "Clone repo, parse ReSpec source"
-    refresh_frequency: "monthly"
     license:
       type: "CC BY 4.0"
       url: "https://github.com/Logius-standaarden/API-Design-Rules/blob/main/LICENSE"
-      commercial_use: true
+      summary: "Creative Commons Attribution — free to use with attribution"
     coverage:
       scope: "REST API design rules for Dutch government services"
-      item_count: "~80"
-      language: "nl+en"
+      version: "ADR v2.0"
+      item_count: 36
+    languages:
+      - "en"

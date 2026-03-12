@@ -1,27 +1,90 @@
-name: Monthly Ingest
+name: Automated Ingestion
 on:
   schedule:
-    - cron: '0 3 1 * *'
+    - cron: '0 3 1 * *'  # Monthly on 1st at 03:00 UTC
   workflow_dispatch:
     inputs:
       force:
-        description: Force rebuild even if no changes detected
+        description: 'Force full re-ingestion (ignore diff check)'
         type: boolean
         default: false
+
 jobs:
   ingest:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '20'
           cache: npm
+
       - run: npm ci
-      - run: npm run ingest:full
-      - run: npm run coverage:verify
-        if: ${{ !inputs.force }}
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "data: monthly ingest update"
-          file_pattern: "data/ COVERAGE.md"
+
+      # 1. Fetch latest data from upstream
+      - name: Fetch upstream data
+        run: npm run ingest:fetch
+
+      # 2. Diff against current database
+      - name: Check for changes
+        id: diff
+        run: |
+          npm run ingest:diff
+          CHANGED="false"
+          if [ -f data/.ingest-changed ]; then
+            CHANGED=$(cat data/.ingest-changed)
+          fi
+          echo "changed=$CHANGED" >> "$GITHUB_OUTPUT"
+
+      # 3. If changed (or forced): rebuild database
+      - name: Rebuild database
+        if: steps.diff.outputs.changed == 'true' || inputs.force
+        run: npm run build:db
+
+      # 4. Build TypeScript and run tests
+      - name: Build and test
+        if: steps.diff.outputs.changed == 'true' || inputs.force
+        run: |
+          npm run build
+          npm test
+          npm run test:contract
+
+      # 5. Update coverage manifest
+      - name: Update coverage
+        if: steps.diff.outputs.changed == 'true' || inputs.force
+        run: npm run coverage:update
+
+      # 6. Verify coverage consistency
+      - name: Verify coverage
+        if: steps.diff.outputs.changed == 'true' || inputs.force
+        run: npm run coverage:verify
+
+      # 7. Commit and push
+      - name: Commit changes
+        if: steps.diff.outputs.changed == 'true' || inputs.force
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ COVERAGE.md
+          SUMMARY="no summary"
+          if [ -f data/.ingest-summary ]; then
+            SUMMARY=$(cat data/.ingest-summary)
+          fi
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "data: automated ingestion $(date -u +%Y-%m-%d)
+
+          Source: upstream refresh
+          Changes: $SUMMARY
+
+          Co-Authored-By: github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          git push
+
+      # 8. Redeploy to Vercel (if configured)
+      - name: Deploy
+        if: (steps.diff.outputs.changed == 'true' || inputs.force) && env.HAS_TOKEN == 'true'
+        env:
+          HAS_TOKEN: ${{ secrets.VERCEL_TOKEN != '' }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: npx vercel --prod --yes --token="$VERCEL_TOKEN"

@@ -1,7 +1,43 @@
 # Disclaimer
 
-This MCP server provides access to Dutch government cybersecurity standards for reference purposes only.
+## Not Professional Advice
 
-This tool does not constitute professional compliance, legal, or cybersecurity advice. The information is compiled from publicly available sources and may not reflect the most current versions.
+This tool provides structured access to Dutch government cybersecurity standards
+sourced from authoritative publications. It is provided for **informational and
+research purposes only**.
 
-Always verify against authoritative sources before making compliance decisions. Ansvar Systems accepts no liability for decisions made based on information provided by this tool.
+- This is **not professional advice** — consult qualified experts for decisions
+  that affect security, compliance, or business operations
+- Data may be incomplete, outdated, or contain errors from automated ingestion
+- **Always verify** critical data against the authoritative source before
+  relying on it professionally
+- The database is a snapshot — sources update, and there may be a delay between
+  upstream changes and database refresh
+
+## No Warranty
+
+This software is provided "as is" without warranty of any kind, express or
+implied. Ansvar Systems AB assumes no liability for any damages arising from
+the use of this tool or the data it provides.
+
+## Data Accuracy
+
+Every effort is made to ensure data accuracy:
+- All data is sourced from authoritative publications (see `sources.yml`)
+- Zero AI-generated or summarized content in the database
+- Automated golden tests verify data integrity
+- Scheduled ingestion keeps data current (see `COVERAGE.md` for refresh schedule)
+
+However, automated ingestion can introduce errors. When precision matters,
+cross-reference with the authoritative source.
+
+## NEN Standards
+
+NEN 7510, NEN 7512, and NEN 7513 content in this database is limited to
+extracted reference data (control identifiers, titles, and categories). Full
+standard text requires purchase from NEN. See [nen.nl](https://www.nen.nl).
+
+## Authoritative Sources
+
+See `sources.yml` and `COVERAGE.md` for the complete list of data sources,
+their versions, and known limitations.
