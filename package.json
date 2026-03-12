@@ -45,6 +45,6 @@
   "dependencies": {
     "@ansvar/mcp-sqlite": "^1.0.3",
     "@modelcontextprotocol/sdk": "^1.25.3",
-    "zod": "^3.24.0"
+    "zod": "^4.3.6"
   }
 }
