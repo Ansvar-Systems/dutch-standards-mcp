@@ -1,0 +1,126 @@
+sources:
+  - name: "BIO2 (Baseline Informatiebeveiliging Overheid)"
+    authority: "CIP/BZK"
+    version: "2.0"
+    effective_date: "2024-01-01"
+    source_type: "github"
+    source_url: "https://github.com/MinBZK/Baseline-Informatiebeveiliging-Overheid"
+    api_url: null
+    retrieval_method: "Clone repo, parse Markdown/ReSpec"
+    refresh_frequency: "annual"
+    license:
+      type: "CC0-1.0"
+      url: "https://github.com/MinBZK/Baseline-Informatiebeveiliging-Overheid/blob/main/LICENSE"
+      commercial_use: true
+    coverage:
+      scope: "Government-wide baseline controls (BBN1/2/3)"
+      item_count: "~93"
+      language: "nl+en"
+
+  - name: "DNB Good Practice Information Security 2023"
+    authority: "DNB"
+    version: "2023"
+    effective_date: "2023-01-01"
+    source_type: "pdf"
+    source_url: "https://www.dnb.nl/en/sector-information/supervision-stages/ongoing-supervision/good-practices/"
+    api_url: null
+    retrieval_method: "PDF download + manual extraction"
+    refresh_frequency: "annual"
+    license:
+      type: "Public sector publication"
+      url: null
+      commercial_use: true
+    coverage:
+      scope: "Financial sector IT security controls"
+      item_count: "~58"
+      language: "nl+en"
+
+  - name: "NEN 7510:2017 / NEN 7512:2022 / NEN 7513:2023"
+    authority: "NEN"
+    version: "7510:2017 / 7512:2022 / 7513:2023"
+    effective_date: "2023-01-01"
+    source_type: "pdf"
+    source_url: "https://www.nen.nl/nen-7510-2017-nl-245398"
+    api_url: null
+    retrieval_method: "PDF from NEN Connect (free preview) + manual extraction"
+    refresh_frequency: "5-year cycle"
+    license:
+      type: "NEN standard (extracted reference data)"
+      url: "https://www.nen.nl/en/terms-of-use"
+      commercial_use: true
+    coverage:
+      scope: "Healthcare information security controls"
+      item_count: "~200"
+      language: "nl"
+
+  - name: "NCSC-NL ICT Security Guidelines for Web Applications"
+    authority: "NCSC-NL"
+    version: "2023"
+    effective_date: "2023-01-01"
+    source_type: "pdf"
+    source_url: "https://www.ncsc.nl/documenten/publicaties/2019/mei/01/ict-beveiligingsrichtlijnen-voor-webapplicaties"
+    api_url: null
+    retrieval_method: "PDF download + manual extraction"
+    refresh_frequency: "annual"
+    license:
+      type: "Public sector publication (CC BY 4.0)"
+      url: "https://www.ncsc.nl/copyright"
+      commercial_use: true
+    coverage:
+      scope: "Web application security requirements"
+      item_count: "~200"
+      language: "nl"
+
+  - name: "DigiD ICT Security Assessment Normenkader 3.0"
+    authority: "Logius"
+    version: "3.0"
+    effective_date: "2023-01-01"
+    source_type: "pdf"
+    source_url: "https://www.logius.nl/domeinen/toegang/digid/documentatie"
+    api_url: null
+    retrieval_method: "PDF download + manual extraction"
+    refresh_frequency: "annual"
+    license:
+      type: "Public sector publication"
+      url: null
+      commercial_use: true
+    coverage:
+      scope: "21 security norms for DigiD connection holders"
+      item_count: "21"
+      language: "nl"
+
+  - name: "NCSC-NL Security Guidelines for TLS"
+    authority: "NCSC-NL"
+    version: "2.1"
+    effective_date: "2021-01-01"
+    source_type: "pdf"
+    source_url: "https://www.ncsc.nl/documenten/publicaties/2021/januari/19/ict-beveiligingsrichtlijnen-voor-transport-layer-security-2.1"
+    api_url: null
+    retrieval_method: "PDF download + manual extraction"
+    refresh_frequency: "annual"
+    license:
+      type: "Public sector publication (CC BY 4.0)"
+      url: "https://www.ncsc.nl/copyright"
+      commercial_use: true
+    coverage:
+      scope: "TLS configuration recommendations"
+      item_count: "~50"
+      language: "nl+en"
+
+  - name: "Logius NLGov REST API Design Rules"
+    authority: "Logius"
+    version: "2.0"
+    effective_date: "2024-01-01"
+    source_type: "github"
+    source_url: "https://github.com/Logius-standaarden/API-Design-Rules"
+    api_url: "https://github.com/Logius-standaarden"
+    retrieval_method: "Clone repo, parse ReSpec source"
+    refresh_frequency: "monthly"
+    license:
+      type: "CC BY 4.0"
+      url: "https://github.com/Logius-standaarden/API-Design-Rules/blob/main/LICENSE"
+      commercial_use: true
+    coverage:
+      scope: "REST API design rules for Dutch government services"
+      item_count: "~80"
+      language: "nl+en"
