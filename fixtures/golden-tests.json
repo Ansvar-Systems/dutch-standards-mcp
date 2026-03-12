@@ -1,0 +1,101 @@
+[
+  {
+    "id": "get-bio2-control",
+    "tool": "get_control",
+    "args": { "control_id": "bio2:5.1" },
+    "assertions": [
+      { "type": "contains", "value": "Beleid voor informatiebeveiliging" },
+      { "type": "has_meta" }
+    ]
+  },
+  {
+    "id": "get-dnb-control",
+    "tool": "get_control",
+    "args": { "control_id": "dnb-gpib-2023:GPIB-01" },
+    "assertions": [
+      { "type": "contains", "value": "IT-governance" },
+      { "type": "has_meta" }
+    ]
+  },
+  {
+    "id": "get-nen7510-control",
+    "tool": "get_control",
+    "args": { "control_id": "nen-7510:A.12.4.1" },
+    "assertions": [
+      { "type": "contains", "value": "Gebeurtenissen registreren" },
+      { "type": "has_meta" }
+    ]
+  },
+  {
+    "id": "search-dutch-term",
+    "tool": "search_controls",
+    "args": { "query": "informatiebeveiliging" },
+    "assertions": [
+      { "type": "contains", "value": "bio2" },
+      { "type": "has_meta" }
+    ]
+  },
+  {
+    "id": "search-english-monitoring",
+    "tool": "search_controls",
+    "args": { "query": "monitoring" },
+    "assertions": [
+      { "type": "contains", "value": "bio2" },
+      { "type": "has_meta" }
+    ]
+  },
+  {
+    "id": "iso-mapping-5-1",
+    "tool": "get_iso_mapping",
+    "args": { "iso_control": "5.1" },
+    "assertions": [
+      { "type": "contains", "value": "bio2" },
+      { "type": "has_meta" }
+    ]
+  },
+  {
+    "id": "sector-healthcare",
+    "tool": "search_by_sector",
+    "args": { "sector": "healthcare" },
+    "assertions": [
+      { "type": "contains", "value": "nen-7510" },
+      { "type": "has_meta" }
+    ]
+  },
+  {
+    "id": "negative-unknown-control",
+    "tool": "get_control",
+    "args": { "control_id": "bio2:999.999" },
+    "assertions": [
+      { "type": "is_error" },
+      { "type": "error_type", "value": "NO_MATCH" }
+    ]
+  },
+  {
+    "id": "negative-empty-search",
+    "tool": "search_controls",
+    "args": { "query": "" },
+    "assertions": [
+      { "type": "is_error" },
+      { "type": "error_type", "value": "INVALID_INPUT" }
+    ]
+  },
+  {
+    "id": "meta-about",
+    "tool": "about",
+    "args": {},
+    "assertions": [
+      { "type": "contains", "value": "Dutch Standards MCP" },
+      { "type": "has_meta" }
+    ]
+  },
+  {
+    "id": "meta-freshness",
+    "tool": "check_data_freshness",
+    "args": {},
+    "assertions": [
+      { "type": "contains", "value": "Data Freshness Report" },
+      { "type": "has_meta" }
+    ]
+  }
+]
