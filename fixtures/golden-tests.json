@@ -2,9 +2,9 @@
   {
     "id": "get-bio2-control",
     "tool": "get_control",
-    "args": { "control_id": "bio2:5.1" },
+    "args": { "control_id": "bio2:5.01.01" },
     "assertions": [
-      { "type": "contains", "value": "Beleid voor informatiebeveiliging" },
+      { "type": "contains", "value": "Policies for information security" },
       { "type": "has_meta" }
     ]
   },
@@ -13,14 +13,14 @@
     "tool": "get_control",
     "args": { "control_id": "dnb-gpib-2023:GPIB-01" },
     "assertions": [
-      { "type": "contains", "value": "IT-governance" },
+      { "type": "contains", "value": "Informatiebeveiligingsbeleid" },
       { "type": "has_meta" }
     ]
   },
   {
     "id": "get-nen7510-control",
     "tool": "get_control",
-    "args": { "control_id": "nen-7510:A.12.4.1" },
+    "args": { "control_id": "nen-7510-2017:12.4.1" },
     "assertions": [
       { "type": "contains", "value": "Gebeurtenissen registreren" },
       { "type": "has_meta" }

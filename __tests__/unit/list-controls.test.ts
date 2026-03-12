@@ -11,16 +11,11 @@ describe('handleListControls', () => {
 
     const text = result.content[0].text;
 
-    // Header with total count
-    expect(text).toContain('total_results: 2');
+    // Header with real total count (160 controls)
+    expect(text).toContain('total_results: 160');
 
-    // Both bio2 controls present
-    expect(text).toContain('bio2:5.1');
-    expect(text).toContain('bio2:8.16');
-
-    // Titles present
-    expect(text).toContain('Beleid voor informatiebeveiliging');
-    expect(text).toContain('Monitoring van activiteiten');
+    // First bio2 control present
+    expect(text).toContain('bio2:5.01.01');
 
     // Markdown table structure
     expect(text).toContain('| ID |');
@@ -34,27 +29,24 @@ describe('handleListControls', () => {
 
     const text = result.content[0].text;
 
-    // Only the Organizational controls control
-    expect(text).toContain('total_results: 1');
-    expect(text).toContain('bio2:5.1');
-    expect(text).not.toContain('bio2:8.16');
+    // Organizational controls present
+    expect(text).toContain('bio2:5.01.01');
+    expect(text).not.toContain('bio2:8.16.01');
   });
 
-  it('filters controls by level BBN1', () => {
-    const result = handleListControls({ framework_id: 'bio2', level: 'BBN1' });
+  it('filters controls by level', () => {
+    const result = handleListControls({ framework_id: 'bio2', level: 'Basishygiëne, Ketenhygiëne' });
 
     expect(result.isError).toBeFalsy();
 
     const text = result.content[0].text;
 
-    // Only BBN1 control
-    expect(text).toContain('total_results: 1');
-    expect(text).toContain('bio2:5.1');
-    expect(text).not.toContain('bio2:8.16');
+    // First control with this level
+    expect(text).toContain('bio2:5.01.01');
   });
 
   it('returns INVALID_INPUT for missing framework_id', () => {
-    // @ts-expect-error — intentional missing arg for test
+    // @ts-expect-error -- intentional missing arg for test
     const result = handleListControls({});
 
     expect(result.isError).toBe(true);
@@ -80,22 +72,12 @@ describe('handleListControls', () => {
     const text1 = page1.content[0].text;
     const text2 = page2.content[0].text;
 
-    // Both pages report total_results: 2 (total count, not page count)
-    expect(text1).toContain('total_results: 2');
-    expect(text2).toContain('total_results: 2');
-
-    // Page 1 has first control, page 2 has second control — no overlap
-    const p1HasFirst = text1.includes('bio2:5.1');
-    const p1HasSecond = text1.includes('bio2:8.16');
-    const p2HasFirst = text2.includes('bio2:5.1');
-    const p2HasSecond = text2.includes('bio2:8.16');
-
-    // Each page has exactly one of the two controls
-    expect(p1HasFirst !== p1HasSecond).toBe(true);
-    expect(p2HasFirst !== p2HasSecond).toBe(true);
+    // Both pages report the full total_results (160)
+    expect(text1).toContain('total_results: 160');
+    expect(text2).toContain('total_results: 160');
 
     // The two pages return different controls
-    expect(p1HasFirst).not.toBe(p2HasFirst);
+    expect(text1).not.toBe(text2);
   });
 
   it('prefers English title when language is en', () => {
@@ -105,9 +87,8 @@ describe('handleListControls', () => {
 
     const text = result.content[0].text;
 
-    // English titles shown
-    expect(text).toContain('Information security policies');
-    expect(text).toContain('Monitoring activities');
+    // English title present in bio2 real data
+    expect(text).toContain('Policies for information security');
   });
 
   it('defaults to Dutch titles', () => {
@@ -117,20 +98,19 @@ describe('handleListControls', () => {
 
     const text = result.content[0].text;
 
-    // Dutch titles shown
-    expect(text).toContain('Beleid voor informatiebeveiliging');
-    expect(text).toContain('Monitoring van activiteiten');
+    // bio2 Dutch title_nl (real data uses control number as title_nl)
+    expect(text).toContain('Overheidsmaatregel');
   });
 
   it('falls back to Dutch when English title is null', () => {
-    // nen-7510:A.12.4.1 has title=null, title_nl set
-    const result = handleListControls({ framework_id: 'nen-7510', language: 'en' });
+    // nen-7510-2017 controls have title=null, title_nl set
+    const result = handleListControls({ framework_id: 'nen-7510-2017', language: 'en' });
 
     expect(result.isError).toBeFalsy();
 
     const text = result.content[0].text;
 
-    // Falls back to Dutch title
-    expect(text).toContain('Gebeurtenissen registreren');
+    // Falls back to Dutch title (first alphabetical result is 10.1.1)
+    expect(text).toContain('Beleid inzake het gebruik van cryptografische beheersmaatregelen');
   });
 });

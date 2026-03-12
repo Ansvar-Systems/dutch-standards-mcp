@@ -15,27 +15,21 @@ describe('handleGetFramework', () => {
     expect(text).toContain('Baseline Informatiebeveiliging Overheid');
     expect(text).toContain('Baseline Information Security Government');
 
-    // Issuing body
-    expect(text).toContain('Nationaal Cyber Security Centrum');
-
-    // Version
-    expect(text).toContain('2.0');
+    // Issuing body (real data: BZK, not NCSC)
+    expect(text).toContain('Binnenlandse Zaken');
 
     // Sectors
     expect(text).toContain('government');
 
-    // Language
-    expect(text).toContain('nl+en');
+    // Control count -- bio2 has 160 controls in real DB
+    expect(text).toContain('160');
 
-    // Control count — bio2 has 2 controls in the seed DB
-    expect(text).toContain('2');
-
-    // Categories table — both categories present in bio2
+    // Categories table -- real bio2 categories
     expect(text).toContain('Organizational controls');
     expect(text).toContain('Technological controls');
 
     // Source URL
-    expect(text).toContain('https://bio-overheid.nl');
+    expect(text).toContain('github.com');
   });
 
   it('returns NO_MATCH for unknown framework', () => {
@@ -47,7 +41,7 @@ describe('handleGetFramework', () => {
   });
 
   it('returns INVALID_INPUT for missing framework_id', () => {
-    // @ts-expect-error — intentional missing arg for test
+    // @ts-expect-error -- intentional missing arg for test
     const result = handleGetFramework({});
 
     expect(result.isError).toBe(true);

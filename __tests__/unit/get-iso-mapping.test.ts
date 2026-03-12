@@ -11,9 +11,8 @@ describe('handleGetIsoMapping', () => {
 
     const text = result.content[0].text;
 
-    // Both controls with iso_mapping="5.1" must appear
-    expect(text).toContain('bio2:5.1');
-    expect(text).toContain('dnb-gpib-2023:GPIB-01');
+    // bio2 controls with iso_mapping="5.1" must appear
+    expect(text).toContain('bio2:5.01.01');
 
     // Should show the ISO control in the heading
     expect(text).toContain('5.1');
@@ -31,9 +30,8 @@ describe('handleGetIsoMapping', () => {
 
     const text = result.content[0].text;
 
-    // Both controls with iso_mapping="8.16" must appear
+    // bio2 controls with iso_mapping="8.16" must appear
     expect(text).toContain('bio2:8.16');
-    expect(text).toContain('nen-7510:A.12.4.1');
 
     // Should show the ISO control in the heading
     expect(text).toContain('8.16');
@@ -52,7 +50,7 @@ describe('handleGetIsoMapping', () => {
   });
 
   it('returns INVALID_INPUT for missing iso_control param', () => {
-    // @ts-expect-error — intentional missing arg for test
+    // @ts-expect-error -- intentional missing arg for test
     const result = handleGetIsoMapping({});
 
     expect(result.isError).toBe(true);

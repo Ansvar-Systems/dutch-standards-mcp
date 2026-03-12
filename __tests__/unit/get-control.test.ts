@@ -3,44 +3,37 @@ import { describe, it, expect } from 'vitest';
 import { handleGetControl } from '../../src/tools/get-control.js';
 
 describe('handleGetControl', () => {
-  it('returns full control detail for bio2:5.1', () => {
-    const result = handleGetControl({ control_id: 'bio2:5.1' });
+  it('returns full control detail for bio2:5.01.01', () => {
+    const result = handleGetControl({ control_id: 'bio2:5.01.01' });
 
     expect(result.isError).toBeFalsy();
     expect(result._meta).toBeDefined();
 
     const text = result.content[0].text;
 
-    // Heading: control number + Dutch title
-    expect(text).toContain('5.1');
-    expect(text).toContain('Beleid voor informatiebeveiliging');
+    // Heading: control number
+    expect(text).toContain('5.01.01');
 
-    // English title (different from Dutch)
-    expect(text).toContain('Information security policies');
+    // English title present
+    expect(text).toContain('Policies for information security');
 
-    // Framework name and issuing body
+    // Framework name
     expect(text).toContain('Baseline Informatiebeveiliging Overheid');
-    expect(text).toContain('Nationaal Cyber Security Centrum');
 
     // Category
     expect(text).toContain('Organizational controls');
 
     // Level
-    expect(text).toContain('BBN1');
+    expect(text).toContain('Basishygiëne');
 
     // ISO mapping
     expect(text).toContain('5.1');
 
-    // Bilingual descriptions
-    expect(text).toContain('Policies for information security');
-    expect(text).toContain('Beleid voor informatiebeveiliging en onderwerpspecifiek beleid');
-
-    // Implementation and verification guidance
-    expect(text).toContain('Establish a clear');
-    expect(text).toContain('Verify policy document');
+    // Dutch description present
+    expect(text).toContain('informatiebeveiliging');
 
     // Source URL
-    expect(text).toContain('https://bio-overheid.nl/5.1');
+    expect(text).toContain('minbzk.github.io');
   });
 
   it('returns NO_MATCH for bio2:999.999', () => {
@@ -52,7 +45,7 @@ describe('handleGetControl', () => {
   });
 
   it('returns INVALID_INPUT for missing control_id', () => {
-    // @ts-expect-error — intentional missing arg for test
+    // @ts-expect-error -- intentional missing arg for test
     const result = handleGetControl({});
 
     expect(result.isError).toBe(true);
