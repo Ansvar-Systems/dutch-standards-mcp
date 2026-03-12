@@ -16,7 +16,7 @@ jobs:
       - run: npm run freshness:check
       - name: Create issue if stale
         if: failure()
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           script: |
             const fs = require('fs');
