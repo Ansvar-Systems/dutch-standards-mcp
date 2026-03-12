@@ -1,7 +1,7 @@
 name: GHCR Build
 on:
   push:
-    branches: [main]
+    branches: [main, master]
     tags: ['v*']
 permissions:
   packages: write
