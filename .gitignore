@@ -1,0 +1,9 @@
+node_modules/
+dist/
+data/*.db
+*.tsbuildinfo
+.env
+.ingest-changed
+.ingest-summary
+.freshness-stale
+.freshness-report

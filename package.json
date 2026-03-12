@@ -1,0 +1,50 @@
+{
+  "name": "@ansvar/dutch-standards-mcp",
+  "version": "0.1.0",
+  "description": "Dutch government cybersecurity standards MCP -- BIO2, DNB Good Practice IB, NEN 7510/7512/7513, NCSC-NL guidelines, DigiD Normenkader, Logius API Design Rules. Part of the Ansvar MCP Network (ansvar.ai/mcp)",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "dutch-standards-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist && find . -name '*.tsbuildinfo' -delete",
+    "dev": "tsx src/index.ts",
+    "dev:http": "tsx src/http-server.ts",
+    "start": "node dist/index.js",
+    "start:http": "node dist/http-server.js",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:contract": "vitest run __tests__/contract/",
+    "build:db": "node --import tsx scripts/build-db.ts",
+    "ingest:fetch": "node --import tsx scripts/ingest-fetch.ts",
+    "ingest:diff": "node --import tsx scripts/ingest-diff.ts",
+    "ingest:full": "npm run ingest:fetch && npm run ingest:diff && npm run build:db && npm run coverage:update",
+    "coverage:update": "node --import tsx scripts/update-coverage.ts",
+    "coverage:verify": "node --import tsx scripts/verify-coverage.ts",
+    "freshness:check": "node --import tsx scripts/check-freshness.ts",
+    "prepare": "test -f dist/index.js || npm run build"
+  },
+  "keywords": ["mcp", "dutch", "netherlands", "bio2", "ncsc", "cybersecurity", "compliance", "standards"],
+  "author": "Ansvar Systems <hello@ansvar.eu>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ansvar-Systems/dutch-standards-mcp.git"
+  },
+  "engines": { "node": ">=20" },
+  "files": ["dist", "data", "sources.yml"],
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.0.0",
+    "tsx": "^4.21.0"
+  },
+  "dependencies": {
+    "@ansvar/mcp-sqlite": "^1.0.3",
+    "@modelcontextprotocol/sdk": "^1.25.3",
+    "zod": "^3.24.0"
+  }
+}

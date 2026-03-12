@@ -1,0 +1,3 @@
+data/extracted/*.json linguist-generated=true
+data/coverage.json linguist-generated=true
+data/.source-hashes.json linguist-generated=true
