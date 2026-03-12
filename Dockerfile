@@ -11,6 +11,20 @@ COPY src/ ./src/
 
 RUN npm run build
 
+# DB builder stage — generates SQLite from extracted JSON
+FROM node:20-alpine AS db-builder
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci --ignore-scripts
+
+COPY scripts/build-db.ts ./scripts/
+COPY data/extracted/ ./data/extracted/
+COPY tsconfig.json ./
+
+RUN npx tsx scripts/build-db.ts
+
 # Production stage
 FROM node:20-alpine
 
@@ -24,7 +38,8 @@ COPY package*.json ./
 RUN npm ci --omit=dev --ignore-scripts
 
 COPY --from=builder /app/dist/ ./dist/
-COPY data/ ./data/
+COPY --from=db-builder /app/data/standards.db ./data/standards.db
+COPY data/coverage.json ./data/coverage.json
 COPY sources.yml ./
 
 RUN chown -R nodejs:nodejs /app
