@@ -3,7 +3,8 @@ node_modules
 .github
 __tests__
 fixtures
-scripts
+scripts/*
+!scripts/build-db.ts
 *.md
 !README.md
 vitest.config.ts
