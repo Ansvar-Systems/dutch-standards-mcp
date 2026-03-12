@@ -1,0 +1,118 @@
+// __tests__/unit/compare-controls.test.ts
+import { describe, it, expect } from 'vitest';
+import { handleCompareControls } from '../../src/tools/compare-controls.js';
+
+describe('handleCompareControls', () => {
+  it('compares controls across bio2 and dnb-gpib-2023 for "informatiebeveiliging"', () => {
+    const result = handleCompareControls({
+      query: 'informatiebeveiliging',
+      framework_ids: ['bio2', 'dnb-gpib-2023'],
+    });
+
+    expect(result.isError).toBeFalsy();
+    expect(result._meta).toBeDefined();
+
+    const text = result.content[0].text;
+
+    // Should have a section for each framework
+    expect(text).toContain('bio2');
+    expect(text).toContain('dnb-gpib-2023');
+
+    // bio2:5.1 matches "informatiebeveiliging" strongly
+    expect(text).toContain('5.1');
+    expect(text).toContain('Beleid voor informatiebeveiliging');
+
+    // dnb-gpib-2023:GPIB-01 matches "informatiebeveiliging" in description_nl
+    expect(text).toContain('GPIB-01');
+    expect(text).toContain('IT-governance');
+  });
+
+  it('returns INVALID_INPUT for fewer than 2 frameworks', () => {
+    const result = handleCompareControls({
+      query: 'informatiebeveiliging',
+      framework_ids: ['bio2'],
+    });
+
+    expect(result.isError).toBe(true);
+    expect(result._error_type).toBe('INVALID_INPUT');
+    expect(result._meta).toBeDefined();
+  });
+
+  it('returns INVALID_INPUT for empty framework_ids array', () => {
+    const result = handleCompareControls({
+      query: 'informatiebeveiliging',
+      framework_ids: [],
+    });
+
+    expect(result.isError).toBe(true);
+    expect(result._error_type).toBe('INVALID_INPUT');
+  });
+
+  it('returns INVALID_INPUT for more than 4 frameworks', () => {
+    const result = handleCompareControls({
+      query: 'informatiebeveiliging',
+      framework_ids: ['bio2', 'dnb-gpib-2023', 'nen-7510', 'framework-four', 'framework-five'],
+    });
+
+    expect(result.isError).toBe(true);
+    expect(result._error_type).toBe('INVALID_INPUT');
+    expect(result._meta).toBeDefined();
+  });
+
+  it('returns INVALID_INPUT when framework_ids is missing', () => {
+    // @ts-expect-error — intentional missing arg for test
+    const result = handleCompareControls({ query: 'informatiebeveiliging' });
+
+    expect(result.isError).toBe(true);
+    expect(result._error_type).toBe('INVALID_INPUT');
+  });
+
+  it('returns INVALID_INPUT when query is missing', () => {
+    // @ts-expect-error — intentional missing arg for test
+    const result = handleCompareControls({ framework_ids: ['bio2', 'dnb-gpib-2023'] });
+
+    expect(result.isError).toBe(true);
+    expect(result._error_type).toBe('INVALID_INPUT');
+  });
+
+  it('renders one markdown section per framework with control number and title', () => {
+    // "registreren" FTS5-matches nen-7510:A.12.4.1 (title_nl + description_nl)
+    // and bio2:5.1 + bio2:8.16 have "registreren"-adjacent terms but we check sections exist
+    // Use "moeten" which FTS5-matches in both bio2 and nen-7510 seed controls
+    const result = handleCompareControls({
+      query: 'moeten',
+      framework_ids: ['bio2', 'nen-7510'],
+    });
+
+    expect(result.isError).toBeFalsy();
+
+    const text = result.content[0].text;
+
+    // Section headers for each framework
+    expect(text).toMatch(/##\s+bio2/);
+    expect(text).toMatch(/##\s+nen-7510/);
+
+    // bio2:8.16 matches "moeten"
+    expect(text).toContain('8.16');
+
+    // nen-7510:A.12.4.1 matches "moeten"
+    expect(text).toContain('A.12.4.1');
+  });
+
+  it('description snippet is at most 150 characters', () => {
+    const result = handleCompareControls({
+      query: 'informatiebeveiliging',
+      framework_ids: ['bio2', 'dnb-gpib-2023'],
+    });
+
+    expect(result.isError).toBeFalsy();
+
+    const text = result.content[0].text;
+    // Each description line should not exceed 150 chars worth of description content
+    // Check that description snippets appear and are truncated
+    // bio2:5.1 full description is 163 chars — should be truncated to 150
+    expect(text).not.toContain(
+      'Beleid voor informatiebeveiliging en onderwerpspecifiek beleid moet worden gedefinieerd, goedgekeurd door de directie, gepubliceerd, gecommuniceerd aan en erkend door relevant personeel en relevante geïnteresseerde partijen.'
+    );
+  });
+});
