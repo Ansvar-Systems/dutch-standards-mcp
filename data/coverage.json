@@ -1,0 +1,96 @@
+{
+  "mcp_name": "dutch-standards-mcp",
+  "generated_at": "2026-03-12T07:55:29Z",
+  "summary": {
+    "frameworks": 9,
+    "controls": 543,
+    "tools": 11
+  },
+  "sources": [
+    {
+      "id": "bio2",
+      "name": "BIO2 (Baseline Informatiebeveiliging Overheid)",
+      "item_count": 160,
+      "last_checked": "2026-03-12",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-12"
+    },
+    {
+      "id": "digid",
+      "name": "DigiD ICT Security Assessment Normenkader 3.0",
+      "item_count": 21,
+      "last_checked": "2026-03-12",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-12"
+    },
+    {
+      "id": "dnb-gpib",
+      "name": "DNB Good Practice Information Security 2023",
+      "item_count": 58,
+      "last_checked": "2026-03-12",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-12"
+    },
+    {
+      "id": "logius-api",
+      "name": "Logius NLGov REST API Design Rules",
+      "item_count": 36,
+      "last_checked": "2026-03-12",
+      "update_frequency": "monthly",
+      "next_check_due": "2026-04-12"
+    },
+    {
+      "id": "ncsc-tls",
+      "name": "NCSC-NL Security Guidelines for TLS",
+      "item_count": 39,
+      "last_checked": "2026-03-12",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-12"
+    },
+    {
+      "id": "ncsc-web",
+      "name": "NCSC-NL ICT Security Guidelines for Web Applications",
+      "item_count": 64,
+      "last_checked": "2026-03-12",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-12"
+    },
+    {
+      "id": "nen-7510",
+      "name": "NEN 7510:2017",
+      "item_count": 113,
+      "last_checked": "2026-03-12",
+      "update_frequency": "5-year cycle",
+      "next_check_due": "2031-03-12"
+    },
+    {
+      "id": "nen-7512",
+      "name": "NEN 7512:2022",
+      "item_count": 28,
+      "last_checked": "2026-03-12",
+      "update_frequency": "5-year cycle",
+      "next_check_due": "2031-03-12"
+    },
+    {
+      "id": "nen-7513",
+      "name": "NEN 7513:2023",
+      "item_count": 24,
+      "last_checked": "2026-03-12",
+      "update_frequency": "5-year cycle",
+      "next_check_due": "2031-03-12"
+    }
+  ],
+  "tools": [
+    "about",
+    "check_data_freshness",
+    "compare_controls",
+    "get_control",
+    "get_framework",
+    "get_iso_mapping",
+    "list_controls",
+    "list_frameworks",
+    "list_sources",
+    "search_by_sector",
+    "search_controls"
+  ]
+}

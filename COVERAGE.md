@@ -18,7 +18,7 @@ This document declares exactly what data the Dutch Standards MCP contains, what 
 | NCSC-NL Security Guidelines for TLS 2.1 | NCSC-NL | ~50 recommendations | 2.1 (2021) | Full | Annual |
 | Logius NLGov REST API Design Rules | Logius | ~80 rules | 2.0 (2024-01-01) | Full | Monthly |
 
-**Total:** 11 tools, ~700 controls/requirements, database built from 7 authoritative Dutch sources.
+**Total:** 11 tools, 543 controls/requirements, database built from 9 authoritative Dutch sources.
 
 ### NEN 7510 / 7512 / 7513 Coverage Note
 
