@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/http-server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/mcp",
+      "dest": "dist/http-server.js"
+    },
+    {
+      "src": "/health",
+      "dest": "dist/http-server.js"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "dutch-standards-mcp",
+  "display_name": "Dutch Standards MCP",
+  "description": "Dutch government cybersecurity standards -- BIO2, DNB Good Practice IB, NEN 7510/7512/7513, NCSC-NL guidelines, DigiD Normenkader, Logius API Design Rules",
+  "author": "Ansvar Systems",
+  "author_url": "https://ansvar.eu",
+  "homepage": "https://github.com/Ansvar-Systems/dutch-standards-mcp",
+  "category": "compliance",
+  "tags": ["dutch", "netherlands", "cybersecurity", "compliance", "bio2", "ncsc", "standards"],
+  "license": "Apache-2.0",
+  "tools_count": 11
+}
