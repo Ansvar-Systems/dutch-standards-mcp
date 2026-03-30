@@ -1,247 +1,96 @@
 {
-  "schema_version": "1.0",
-  "mcp_name": "Dutch Standards MCP",
-  "mcp_type": "domain_intelligence",
-  "coverage_date": "2026-03-12",
-  "database_version": "1.0.0",
+  "mcp_name": "dutch-standards-mcp",
+  "generated_at": "2026-03-30T19:43:47Z",
+  "summary": {
+    "frameworks": 9,
+    "controls": 549,
+    "tools": 11
+  },
   "sources": [
     {
       "id": "bio2",
       "name": "BIO2 (Baseline Informatiebeveiliging Overheid)",
-      "authority": "CIP/BZK",
-      "url": "https://github.com/MinBZK/Baseline-Informatiebeveiliging-Overheid",
-      "version": "2.0",
-      "item_count": 160,
-      "item_type": "control",
-      "last_refresh": "2026-03-12",
-      "refresh_frequency": "annual",
-      "completeness": "full",
-      "completeness_note": "All BIO2 controls extracted from MinBZK GitHub repository"
+      "item_count": 166,
+      "last_checked": "2026-03-30",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-30"
     },
     {
       "id": "digid",
       "name": "DigiD ICT Security Assessment Normenkader 3.0",
-      "authority": "Logius",
-      "url": "https://www.logius.nl/domeinen/toegang/digid/documentatie",
-      "version": "3.0",
       "item_count": 21,
-      "item_type": "control",
-      "last_refresh": "2026-03-12",
-      "refresh_frequency": "annual",
-      "completeness": "full",
-      "completeness_note": "All 21 DigiD security norms extracted"
+      "last_checked": "2026-03-30",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-30"
     },
     {
       "id": "dnb-gpib",
       "name": "DNB Good Practice Information Security 2023",
-      "authority": "DNB",
-      "url": "https://www.dnb.nl/en/sector-information/supervision-stages/ongoing-supervision/good-practices/",
-      "version": "2023",
       "item_count": 58,
-      "item_type": "control",
-      "last_refresh": "2026-03-12",
-      "refresh_frequency": "annual",
-      "completeness": "full",
-      "completeness_note": "All DNB GPIB controls extracted from official publication"
+      "last_checked": "2026-03-30",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-30"
     },
     {
       "id": "logius-api",
       "name": "Logius NLGov REST API Design Rules",
-      "authority": "Logius",
-      "url": "https://github.com/Logius-standaarden/API-Design-Rules",
-      "version": "2.0",
       "item_count": 36,
-      "item_type": "control",
-      "last_refresh": "2026-03-12",
-      "refresh_frequency": "monthly",
-      "completeness": "full",
-      "completeness_note": "All API design rules extracted from Logius GitHub repository"
+      "last_checked": "2026-03-30",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-30"
     },
     {
       "id": "ncsc-tls",
       "name": "NCSC-NL Security Guidelines for TLS",
-      "authority": "NCSC-NL",
-      "url": "https://www.ncsc.nl/documenten/publicaties/2021/januari/19/ict-beveiligingsrichtlijnen-voor-transport-layer-security-2.1",
-      "version": "2.1",
       "item_count": 39,
-      "item_type": "control",
-      "last_refresh": "2026-03-12",
-      "refresh_frequency": "annual",
-      "completeness": "full",
-      "completeness_note": "All TLS security guidelines extracted"
+      "last_checked": "2026-03-30",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-30"
     },
     {
       "id": "ncsc-web",
       "name": "NCSC-NL ICT Security Guidelines for Web Applications",
-      "authority": "NCSC-NL",
-      "url": "https://www.ncsc.nl/documenten/publicaties/2019/mei/01/ict-beveiligingsrichtlijnen-voor-webapplicaties",
-      "version": "2023",
       "item_count": 64,
-      "item_type": "control",
-      "last_refresh": "2026-03-12",
-      "refresh_frequency": "annual",
-      "completeness": "full",
-      "completeness_note": "All NCSC web application security guidelines extracted"
+      "last_checked": "2026-03-30",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-30"
     },
     {
       "id": "nen-7510",
       "name": "NEN 7510:2017",
-      "authority": "NEN",
-      "url": "https://www.nen.nl/nen-7510-2017-nl-245398",
-      "version": "2017",
       "item_count": 113,
-      "item_type": "control",
-      "last_refresh": "2026-03-12",
-      "refresh_frequency": "manual",
-      "completeness": "full",
-      "completeness_note": "All NEN 7510 healthcare security controls extracted from reference data"
+      "last_checked": "2026-03-30",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-30"
     },
     {
       "id": "nen-7512",
       "name": "NEN 7512:2022",
-      "authority": "NEN",
-      "url": "https://www.nen.nl/nen-7512-2022-nl-291955",
-      "version": "2022",
       "item_count": 28,
-      "item_type": "control",
-      "last_refresh": "2026-03-12",
-      "refresh_frequency": "manual",
-      "completeness": "full",
-      "completeness_note": "All NEN 7512 healthcare data exchange controls extracted"
+      "last_checked": "2026-03-30",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-30"
     },
     {
       "id": "nen-7513",
       "name": "NEN 7513:2023",
-      "authority": "NEN",
-      "url": "https://www.nen.nl/nen-7513-2023-nl-308988",
-      "version": "2023",
       "item_count": 24,
-      "item_type": "control",
-      "last_refresh": "2026-03-12",
-      "refresh_frequency": "manual",
-      "completeness": "full",
-      "completeness_note": "All NEN 7513 healthcare logging controls extracted"
-    }
-  ],
-  "gaps": [
-    {
-      "id": "forum-standaardisatie",
-      "description": "Forum Standaardisatie 'comply or explain' list — over 40 mandatory ICT standards for Dutch government",
-      "reason": "Requires structured extraction from forum-standaardisatie.nl; mixed format (HTML + PDF per standard)",
-      "impact": "medium",
-      "planned": true,
-      "target_version": "1.1"
-    },
-    {
-      "id": "wpg-baseline",
-      "description": "Baseline Informatiebeveiliging Politie (BIP) — police-specific security controls",
-      "reason": "Restricted distribution; not publicly available in structured format",
-      "impact": "low",
-      "planned": false,
-      "target_version": null
-    },
-    {
-      "id": "suwinet-norms",
-      "description": "Suwinet security norms — social security data exchange requirements",
-      "reason": "Available as PDF only; requires manual extraction",
-      "impact": "low",
-      "planned": true,
-      "target_version": "1.2"
-    },
-    {
-      "id": "nora-principles",
-      "description": "NORA (Nederlandse Overheid Referentie Architectuur) — Dutch government reference architecture principles",
-      "reason": "Large scope; requires scoping decision on which NORA layers to include",
-      "impact": "medium",
-      "planned": true,
-      "target_version": "1.2"
+      "last_checked": "2026-03-30",
+      "update_frequency": "annual",
+      "next_check_due": "2027-03-30"
     }
   ],
   "tools": [
-    {
-      "name": "search_controls",
-      "category": "search",
-      "description": "Full-text search across all controls in both Dutch and English",
-      "data_sources": ["bio2", "digid", "dnb-gpib", "logius-api", "ncsc-tls", "ncsc-web", "nen-7510", "nen-7512", "nen-7513"],
-      "verified": true
-    },
-    {
-      "name": "get_control",
-      "category": "lookup",
-      "description": "Retrieve a specific control by framework-prefixed ID",
-      "data_sources": ["bio2", "digid", "dnb-gpib", "logius-api", "ncsc-tls", "ncsc-web", "nen-7510", "nen-7512", "nen-7513"],
-      "verified": true
-    },
-    {
-      "name": "list_controls",
-      "category": "lookup",
-      "description": "List all controls for a given framework with optional category filter",
-      "data_sources": ["bio2", "digid", "dnb-gpib", "logius-api", "ncsc-tls", "ncsc-web", "nen-7510", "nen-7512", "nen-7513"],
-      "verified": true
-    },
-    {
-      "name": "list_frameworks",
-      "category": "lookup",
-      "description": "List all available frameworks with control counts",
-      "data_sources": ["bio2", "digid", "dnb-gpib", "logius-api", "ncsc-tls", "ncsc-web", "nen-7510", "nen-7512", "nen-7513"],
-      "verified": true
-    },
-    {
-      "name": "get_framework",
-      "category": "lookup",
-      "description": "Get detailed information about a specific framework",
-      "data_sources": ["bio2", "digid", "dnb-gpib", "logius-api", "ncsc-tls", "ncsc-web", "nen-7510", "nen-7512", "nen-7513"],
-      "verified": true
-    },
-    {
-      "name": "get_iso_mapping",
-      "category": "analysis",
-      "description": "Find Dutch controls that map to a specific ISO 27001/27002 control",
-      "data_sources": ["bio2", "digid", "dnb-gpib", "logius-api", "ncsc-tls", "ncsc-web", "nen-7510", "nen-7512", "nen-7513"],
-      "verified": true
-    },
-    {
-      "name": "compare_controls",
-      "category": "analysis",
-      "description": "Compare controls between two frameworks side by side",
-      "data_sources": ["bio2", "digid", "dnb-gpib", "logius-api", "ncsc-tls", "ncsc-web", "nen-7510", "nen-7512", "nen-7513"],
-      "verified": true
-    },
-    {
-      "name": "search_by_sector",
-      "category": "search",
-      "description": "Find controls relevant to a specific sector (government, healthcare, finance)",
-      "data_sources": ["bio2", "digid", "dnb-gpib", "logius-api", "ncsc-tls", "ncsc-web", "nen-7510", "nen-7512", "nen-7513"],
-      "verified": true
-    },
-    {
-      "name": "about",
-      "category": "meta",
-      "description": "Server metadata, stats, data sources, and disclaimer",
-      "data_sources": [],
-      "verified": true
-    },
-    {
-      "name": "check_data_freshness",
-      "category": "meta",
-      "description": "Per-source data age report with staleness flags",
-      "data_sources": ["bio2", "digid", "dnb-gpib", "logius-api", "ncsc-tls", "ncsc-web", "nen-7510", "nen-7512", "nen-7513"],
-      "verified": true
-    },
-    {
-      "name": "list_sources",
-      "category": "meta",
-      "description": "Data provenance and licensing information for all sources",
-      "data_sources": [],
-      "verified": true
-    }
-  ],
-  "summary": {
-    "total_tools": 11,
-    "total_sources": 9,
-    "total_items": 543,
-    "db_size_mb": 0.55,
-    "known_gaps": 4,
-    "gaps_planned": 3
-  }
+    "about",
+    "check_data_freshness",
+    "compare_controls",
+    "get_control",
+    "get_framework",
+    "get_iso_mapping",
+    "list_controls",
+    "list_frameworks",
+    "list_sources",
+    "search_by_sector",
+    "search_controls"
+  ]
 }

@@ -212,7 +212,7 @@
       "control_number": "/core/error-handling/problem-details",
       "title": "Use problem details for error responses",
       "title_nl": null,
-      "description": "Error responses with HTTP status codes 4xx or 5xx MUST use either application/problem+json or application/problem+xml as the Content-Type header, and the response body MUST conform to the structure defined in rfc9457.\n         The following fields MUST be present: status, title, and detail.\n\nRationale: Providing problem details in a machine-readable format aids automation and debugging. By using a common error format, APIs do not need to define their own or misuse existing HTTP status codes.",
+      "description": "Error responses with HTTP status codes 4xx or 5xx MUST use either application/problem+json or application/problem+xml as the Content-Type header, and the response body MUST conform to the structure defined in RFC9457.\n         The following fields MUST be present: status, title, and detail.\n\nRationale: Providing problem details in a machine-readable format aids automation and debugging. By using a common error format, APIs do not need to define their own or misuse existing HTTP status codes.",
       "description_nl": null,
       "category": "Error handling",
       "level": "technical",
@@ -450,7 +450,7 @@
     }
   ],
   "metadata": {
-    "ingested_at": "2026-03-12T07:25:44.272Z",
+    "ingested_at": "2026-03-30T19:43:39.263Z",
     "source_repo": "https://github.com/Logius-standaarden/API-Design-Rules.git",
     "source_file": "sections/designRules.md",
     "total_controls": 36,
