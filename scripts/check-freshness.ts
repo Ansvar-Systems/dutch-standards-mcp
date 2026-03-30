@@ -30,9 +30,13 @@ interface CoverageSource {
   id: string;
   name: string;
   item_count: number;
-  last_checked: string;
-  update_frequency: string;
-  next_check_due: string;
+  // coverage.json uses last_refresh / refresh_frequency
+  last_refresh: string;
+  refresh_frequency: string;
+  // Legacy aliases (for forward compat)
+  last_checked?: string;
+  update_frequency?: string;
+  next_check_due?: string;
 }
 
 interface Coverage {
@@ -65,7 +69,21 @@ function computeFreshness(source: CoverageSource): FreshnessStatus {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  const nextDue = new Date(source.next_check_due);
+  const frequency = source.refresh_frequency || source.update_frequency || 'annual';
+  const lastRefresh = source.last_refresh || source.last_checked;
+
+  if (!lastRefresh) {
+    return { kind: 'overdue', daysOverdue: 999 };
+  }
+
+  const windowDays = frequencyToDays(frequency);
+  const refreshDate = new Date(lastRefresh);
+  refreshDate.setHours(0, 0, 0, 0);
+
+  // next_check_due = last_refresh + window
+  const nextDue = source.next_check_due
+    ? new Date(source.next_check_due)
+    : new Date(refreshDate.getTime() + windowDays * 24 * 60 * 60 * 1000);
   nextDue.setHours(0, 0, 0, 0);
 
   const diffMs = nextDue.getTime() - today.getTime();
@@ -75,7 +93,6 @@ function computeFreshness(source: CoverageSource): FreshnessStatus {
     return { kind: 'overdue', daysOverdue: Math.abs(diffDays) };
   }
 
-  const windowDays = frequencyToDays(source.update_frequency);
   const warningThreshold = Math.ceil(windowDays * 0.2);
 
   if (diffDays <= warningThreshold) {
@@ -135,12 +152,20 @@ async function main(): Promise<void> {
     if (status.kind === 'overdue') anyOverdue = true;
     if (status.kind === 'due_soon') anyDueSoon = true;
 
+    const frequency = source.refresh_frequency || source.update_frequency || 'annual';
+    const lastRefresh = source.last_refresh || source.last_checked || 'unknown';
+    const windowDays = frequencyToDays(frequency);
+    const nextDueDate = source.next_check_due
+      || (lastRefresh !== 'unknown'
+        ? new Date(new Date(lastRefresh).getTime() + windowDays * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+        : 'unknown');
+
     statusRows.push({
       id: source.id,
       name: source.name,
-      lastChecked: source.last_checked,
-      nextDue: source.next_check_due,
-      frequency: source.update_frequency,
+      lastChecked: lastRefresh,
+      nextDue: nextDueDate,
+      frequency,
       status,
       statusText: formatStatus(status),
     });
