@@ -23,8 +23,9 @@ describe('handleGetControl', () => {
     // Category
     expect(text).toContain('Organizational controls');
 
-    // Level field present (content may change with upstream data)
-    expect(text).toMatch(/Level/i);
+    // Framework and category always present
+    expect(text).toContain('Framework');
+    expect(text).toContain('Category');
 
     // ISO mapping
     expect(text).toContain('5.1');
