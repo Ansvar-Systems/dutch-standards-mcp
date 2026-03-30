@@ -8,6 +8,8 @@ on:
         description: 'Force full re-ingestion (ignore diff check)'
         type: boolean
         default: false
+permissions:
+  contents: write
 
 jobs:
   ingest:
