@@ -1,6 +1,6 @@
 {
   "mcp_name": "dutch-standards-mcp",
-  "generated_at": "2026-03-30T19:43:47Z",
+  "generated_at": "2026-04-01T05:24:35Z",
   "summary": {
     "frameworks": 9,
     "controls": 549,
@@ -11,73 +11,73 @@
       "id": "bio2",
       "name": "BIO2 (Baseline Informatiebeveiliging Overheid)",
       "item_count": 166,
-      "last_checked": "2026-03-30",
+      "last_checked": "2026-04-01",
       "update_frequency": "annual",
-      "next_check_due": "2027-03-30"
+      "next_check_due": "2027-04-01"
     },
     {
       "id": "digid",
       "name": "DigiD ICT Security Assessment Normenkader 3.0",
       "item_count": 21,
-      "last_checked": "2026-03-30",
+      "last_checked": "2026-04-01",
       "update_frequency": "annual",
-      "next_check_due": "2027-03-30"
+      "next_check_due": "2027-04-01"
     },
     {
       "id": "dnb-gpib",
       "name": "DNB Good Practice Information Security 2023",
       "item_count": 58,
-      "last_checked": "2026-03-30",
+      "last_checked": "2026-04-01",
       "update_frequency": "annual",
-      "next_check_due": "2027-03-30"
+      "next_check_due": "2027-04-01"
     },
     {
       "id": "logius-api",
       "name": "Logius NLGov REST API Design Rules",
       "item_count": 36,
-      "last_checked": "2026-03-30",
+      "last_checked": "2026-04-01",
       "update_frequency": "annual",
-      "next_check_due": "2027-03-30"
+      "next_check_due": "2027-04-01"
     },
     {
       "id": "ncsc-tls",
       "name": "NCSC-NL Security Guidelines for TLS",
       "item_count": 39,
-      "last_checked": "2026-03-30",
+      "last_checked": "2026-04-01",
       "update_frequency": "annual",
-      "next_check_due": "2027-03-30"
+      "next_check_due": "2027-04-01"
     },
     {
       "id": "ncsc-web",
       "name": "NCSC-NL ICT Security Guidelines for Web Applications",
       "item_count": 64,
-      "last_checked": "2026-03-30",
+      "last_checked": "2026-04-01",
       "update_frequency": "annual",
-      "next_check_due": "2027-03-30"
+      "next_check_due": "2027-04-01"
     },
     {
       "id": "nen-7510",
       "name": "NEN 7510:2017",
       "item_count": 113,
-      "last_checked": "2026-03-30",
+      "last_checked": "2026-04-01",
       "update_frequency": "annual",
-      "next_check_due": "2027-03-30"
+      "next_check_due": "2027-04-01"
     },
     {
       "id": "nen-7512",
       "name": "NEN 7512:2022",
       "item_count": 28,
-      "last_checked": "2026-03-30",
+      "last_checked": "2026-04-01",
       "update_frequency": "annual",
-      "next_check_due": "2027-03-30"
+      "next_check_due": "2027-04-01"
     },
     {
       "id": "nen-7513",
       "name": "NEN 7513:2023",
       "item_count": 24,
-      "last_checked": "2026-03-30",
+      "last_checked": "2026-04-01",
       "update_frequency": "annual",
-      "next_check_due": "2027-03-30"
+      "next_check_due": "2027-04-01"
     }
   ],
   "tools": [

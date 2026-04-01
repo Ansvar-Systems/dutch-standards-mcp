@@ -21,11 +21,11 @@
       "title": "Policies for information security (Gov. measure 5.01.01)",
       "title_nl": "Overheidsmaatregel 5.01.01",
       "description": "",
-      "description_nl": "De entiteit heeft een informatiebeveiligingsbeleid opgesteld en vastgesteld door het bestuur van de entiteit.\nDit beleid bevat ten minste de volgende punten:\n- De strategische uitgangspunten en randvoorwaarden die de entiteit hanteert voor informatiebeveiliging en in het bijzonder de inbedding in en afstemming op het algemene beveiligingsbeleid en het informatievoorzieningsbeleid.\n- De organisatie van de informatiebeveiligingsfunctie, waaronder verantwoordelijkheden, taken en bevoegdheden.\n- De toewijzing van de verantwoordelijkheden en samenhang van informatiebeveiliging voor ketens van informatiesystemen, de beveiliging van OT, privacybescherming en de verantwoordelijkheden voor de continuïteit van de taakuitvoering van entiteit (BCM) aan lijnmanagers.\n- De gemeenschappelijke betrouwbaarheidseisen en normen die op de entiteit van toepassing zijn.\n- De frequentie waarmee het informatiebeveiligingsbeleid wordt geëvalueerd.\n- De bevordering van het beveiligingsbewustzijn.",
+      "description_nl": "De entiteit heeft een informatiebeveiligingsbeleid opgesteld en vastgesteld door het bestuur van de entiteit.\n\nDit beleid bevat ten minste de volgende punten:\n\n- De strategische uitgangspunten en randvoorwaarden die de entiteit hanteert voor informatiebeveiliging en in het bijzonder de inbedding in en afstemming op het algemene beveiligingsbeleid en het informatievoorzieningsbeleid.\n- De organisatie van de informatiebeveiligingsfunctie, waaronder verantwoordelijkheden, taken en bevoegdheden.\n- De toewijzing van de verantwoordelijkheden en samenhang van informatiebeveiliging voor ketens van informatiesystemen, de beveiliging van OT, privacybescherming en de verantwoordelijkheden voor de continuïteit van de taakuitvoering van entiteit (BCM) aan lijnmanagers.\n- De gemeenschappelijke betrouwbaarheidseisen en normen die op de entiteit van toepassing zijn.\n- De frequentie waarmee het informatiebeveiligingsbeleid wordt geëvalueerd.\n- De bevordering van het beveiligingsbewustzijn.",
       "category": "Organizational controls",
       "level": "",
       "iso_mapping": "5.1",
-      "implementation_guidance": "De entiteit heeft een informatiebeveiligingsbeleid opgesteld en vastgesteld door het bestuur van de entiteit.\nDit beleid bevat ten minste de volgende punten:\n- De strategische uitgangspunten en randvoorwaarden die de entiteit hanteert voor informatiebeveiliging en in het bijzonder de inbedding in en afstemming op het algemene beveiligingsbeleid en het informatievoorzieningsbeleid.\n- De organisatie van de informatiebeveiligingsfunctie, waaronder verantwoordelijkheden, taken en bevoegdheden.\n- De toewijzing van de verantwoordelijkheden en samenhang van informatiebeveiliging voor ketens van informatiesystemen, de beveiliging van OT, privacybescherming en de verantwoordelijkheden voor de continuïteit van de taakuitvoering van entiteit (BCM) aan lijnmanagers.\n- De gemeenschappelijke betrouwbaarheidseisen en normen die op de entiteit van toepassing zijn.\n- De frequentie waarmee het informatiebeveiligingsbeleid wordt geëvalueerd.\n- De bevordering van het beveiligingsbewustzijn.",
+      "implementation_guidance": "De entiteit heeft een informatiebeveiligingsbeleid opgesteld en vastgesteld door het bestuur van de entiteit.\n\nDit beleid bevat ten minste de volgende punten:\n\n- De strategische uitgangspunten en randvoorwaarden die de entiteit hanteert voor informatiebeveiliging en in het bijzonder de inbedding in en afstemming op het algemene beveiligingsbeleid en het informatievoorzieningsbeleid.\n- De organisatie van de informatiebeveiligingsfunctie, waaronder verantwoordelijkheden, taken en bevoegdheden.\n- De toewijzing van de verantwoordelijkheden en samenhang van informatiebeveiliging voor ketens van informatiesystemen, de beveiliging van OT, privacybescherming en de verantwoordelijkheden voor de continuïteit van de taakuitvoering van entiteit (BCM) aan lijnmanagers.\n- De gemeenschappelijke betrouwbaarheidseisen en normen die op de entiteit van toepassing zijn.\n- De frequentie waarmee het informatiebeveiligingsbeleid wordt geëvalueerd.\n- De bevordering van het beveiligingsbewustzijn.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#50101"
     },
     {
@@ -45,11 +45,11 @@
       "title": "Information security roles and responsibilities (Gov. measure 5.02.01)",
       "title_nl": "Overheidsmaatregel 5.02.01",
       "description": "",
-      "description_nl": "Het bestuur van de entiteit heeft vastgelegd en vastgesteld:\n-  wat de verantwoordelijkheden en rollen zijn voor informatiebeveiliging, privacybescherming, operationele technologie (OT), bedrijfscontinuïteitsmanagement (BCM) binnen haar entiteit;\n-  de samenhang voor informatiebeveiliging, de beveiliging van OT, de continuïteit van de taakuitvoering en BCM van de entiteit.\n\nBij het definiëren en toewijzen van rollen en verantwoordelijkheden is specifieke aandacht voor het adequaat afhandelen van incidenten.\n\nLijnmanagers en proceseigenaren die verantwoordelijk zijn voor bedrijfsmiddelen zijn ook verantwoordelijk voor de behandeling van risico’s die op die bedrijfsmiddelen van toepassing zijn.",
+      "description_nl": "Het bestuur van de entiteit heeft vastgelegd en vastgesteld:\n\n-  wat de verantwoordelijkheden en rollen zijn voor informatiebeveiliging, privacybescherming, operationele technologie (OT), bedrijfscontinuïteitsmanagement (BCM) binnen haar entiteit;\n-  de samenhang voor informatiebeveiliging, de beveiliging van OT, de continuïteit van de taakuitvoering en BCM van de entiteit.\n\nBij het definiëren en toewijzen van rollen en verantwoordelijkheden is specifieke aandacht voor het adequaat afhandelen van incidenten.\n\nLijnmanagers en proceseigenaren die verantwoordelijk zijn voor bedrijfsmiddelen zijn ook verantwoordelijk voor de behandeling van risico’s die op die bedrijfsmiddelen van toepassing zijn.",
       "category": "Organizational controls",
       "level": "",
       "iso_mapping": "5.2",
-      "implementation_guidance": "Het bestuur van de entiteit heeft vastgelegd en vastgesteld:\n-  wat de verantwoordelijkheden en rollen zijn voor informatiebeveiliging, privacybescherming, operationele technologie (OT), bedrijfscontinuïteitsmanagement (BCM) binnen haar entiteit;\n-  de samenhang voor informatiebeveiliging, de beveiliging van OT, de continuïteit van de taakuitvoering en BCM van de entiteit.\n\nBij het definiëren en toewijzen van rollen en verantwoordelijkheden is specifieke aandacht voor het adequaat afhandelen van incidenten.\n\nLijnmanagers en proceseigenaren die verantwoordelijk zijn voor bedrijfsmiddelen zijn ook verantwoordelijk voor de behandeling van risico’s die op die bedrijfsmiddelen van toepassing zijn.",
+      "implementation_guidance": "Het bestuur van de entiteit heeft vastgelegd en vastgesteld:\n\n-  wat de verantwoordelijkheden en rollen zijn voor informatiebeveiliging, privacybescherming, operationele technologie (OT), bedrijfscontinuïteitsmanagement (BCM) binnen haar entiteit;\n-  de samenhang voor informatiebeveiliging, de beveiliging van OT, de continuïteit van de taakuitvoering en BCM van de entiteit.\n\nBij het definiëren en toewijzen van rollen en verantwoordelijkheden is specifieke aandacht voor het adequaat afhandelen van incidenten.\n\nLijnmanagers en proceseigenaren die verantwoordelijk zijn voor bedrijfsmiddelen zijn ook verantwoordelijk voor de behandeling van risico’s die op die bedrijfsmiddelen van toepassing zijn.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#50201"
     },
     {
@@ -309,11 +309,11 @@
       "title": "Access control (Gov. measure 5.15.01)",
       "title_nl": "Overheidsmaatregel 5.15.01",
       "description": "",
-      "description_nl": "Toegang tot een vertrouwde zone is toegestaan in twee situaties:\n1. vanaf geauthentiseerde apparatuur of;\n2. vanuit programmatuur die draait binnen een veilige schil.",
+      "description_nl": "Toegang tot een vertrouwde zone is toegestaan in twee situaties:\n\n1. vanaf geauthentiseerde apparatuur of;\n2. vanuit programmatuur die draait binnen een veilige schil.",
       "category": "Organizational controls",
       "level": "",
       "iso_mapping": "5.15",
-      "implementation_guidance": "Toegang tot een vertrouwde zone is toegestaan in twee situaties:\n1. vanaf geauthentiseerde apparatuur of;\n2. vanuit programmatuur die draait binnen een veilige schil.",
+      "implementation_guidance": "Toegang tot een vertrouwde zone is toegestaan in twee situaties:\n\n1. vanaf geauthentiseerde apparatuur of;\n2. vanuit programmatuur die draait binnen een veilige schil.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#51501"
     },
     {
@@ -345,11 +345,11 @@
       "title": "Authentication information (Gov. measure 5.17.01)",
       "title_nl": "Overheidsmaatregel 5.17.01",
       "description": "",
-      "description_nl": "De entiteit past multi-factorauthenticatie (MFA) ten minste toe voor het primaire aanloggen op de digitale werkomgeving, bij accounts voor via het internet bereikbare voorzieningen en accounts die beheerrechten hebben en in andere situaties waar uit de risicoanalyse blijkt dat dit een passende oplossing is.\n\nDe entiteit past MFA toe in deze twee vormen:\n1. Wachtwoordloze toegang, zoals een pincode in combinatie met een hardware token of persoonlijk uniek certificaat (passkey).\n2. Wachtwoordtoegang in combinatie met minimaal een tweede factor.\n\nIndien MFA niet mogelijk is voor deze accounts, worden andere mitigerende maatregelen genomen.\n\nBij het nemen van mitigerende maatregelen wordt de CISO betrokken.\n\nDe proceseigenaar keurt de mitigerende maatregelen goed.\n\nWaar mogelijk en veilig wordt MFA met federatieve authenticatievoorzieningen zoals Single Sign On en een Stepping Stone-oplossing worden gecombineerd toegepast.\n\nVoor beheer en monitoring van authenticatiegegevens:\n- wordt authenticatie-informatie uitgegeven met formele vastgestelde procedures, nadat de identiteit van de gebruiker met voldoende zekerheid is vastgesteld;\n- worden Use Cases voor misbruik van authenticatiegegevens gedefinieerd, worden deze gemonitord en wordt passende actie ondernomen bij het optreden ervan. Deze Use Cases omvatten in ieder geval inlogpogingen van ongebruikelijke plekken en pieken in mislukte inlogpogingen.",
+      "description_nl": "De entiteit past multi-factorauthenticatie (MFA) ten minste toe voor het primaire aanloggen op de digitale werkomgeving, bij accounts voor via het internet bereikbare voorzieningen en accounts die beheerrechten hebben en in andere situaties waar uit de risicoanalyse blijkt dat dit een passende oplossing is.\n\nDe entiteit past MFA toe in deze twee vormen:\n\n1. Wachtwoordloze toegang, zoals een pincode in combinatie met een hardware token of persoonlijk uniek certificaat (passkey).\n2. Wachtwoordtoegang in combinatie met minimaal een tweede factor.\n\nIndien MFA niet mogelijk is voor deze accounts, worden andere mitigerende maatregelen genomen.\n\nBij het nemen van mitigerende maatregelen wordt de CISO betrokken.\n\nDe proceseigenaar keurt de mitigerende maatregelen goed.\n\nWaar mogelijk en veilig wordt MFA met federatieve authenticatievoorzieningen zoals Single Sign On en een Stepping Stone-oplossing worden gecombineerd toegepast.\n\nVoor beheer en monitoring van authenticatiegegevens:\n\n- wordt authenticatie-informatie uitgegeven met formele vastgestelde procedures, nadat de identiteit van de gebruiker met voldoende zekerheid is vastgesteld;\n- worden Use Cases voor misbruik van authenticatiegegevens gedefinieerd, worden deze gemonitord en wordt passende actie ondernomen bij het optreden ervan. Deze Use Cases omvatten in ieder geval inlogpogingen van ongebruikelijke plekken en pieken in mislukte inlogpogingen.",
       "category": "Organizational controls",
       "level": "",
       "iso_mapping": "5.17",
-      "implementation_guidance": "De entiteit past multi-factorauthenticatie (MFA) ten minste toe voor het primaire aanloggen op de digitale werkomgeving, bij accounts voor via het internet bereikbare voorzieningen en accounts die beheerrechten hebben en in andere situaties waar uit de risicoanalyse blijkt dat dit een passende oplossing is.\n\nDe entiteit past MFA toe in deze twee vormen:\n1. Wachtwoordloze toegang, zoals een pincode in combinatie met een hardware token of persoonlijk uniek certificaat (passkey).\n2. Wachtwoordtoegang in combinatie met minimaal een tweede factor.\n\nIndien MFA niet mogelijk is voor deze accounts, worden andere mitigerende maatregelen genomen.\n\nBij het nemen van mitigerende maatregelen wordt de CISO betrokken.\n\nDe proceseigenaar keurt de mitigerende maatregelen goed.\n\nWaar mogelijk en veilig wordt MFA met federatieve authenticatievoorzieningen zoals Single Sign On en een Stepping Stone-oplossing worden gecombineerd toegepast.\n\nVoor beheer en monitoring van authenticatiegegevens:\n- wordt authenticatie-informatie uitgegeven met formele vastgestelde procedures, nadat de identiteit van de gebruiker met voldoende zekerheid is vastgesteld;\n- worden Use Cases voor misbruik van authenticatiegegevens gedefinieerd, worden deze gemonitord en wordt passende actie ondernomen bij het optreden ervan. Deze Use Cases omvatten in ieder geval inlogpogingen van ongebruikelijke plekken en pieken in mislukte inlogpogingen.",
+      "implementation_guidance": "De entiteit past multi-factorauthenticatie (MFA) ten minste toe voor het primaire aanloggen op de digitale werkomgeving, bij accounts voor via het internet bereikbare voorzieningen en accounts die beheerrechten hebben en in andere situaties waar uit de risicoanalyse blijkt dat dit een passende oplossing is.\n\nDe entiteit past MFA toe in deze twee vormen:\n\n1. Wachtwoordloze toegang, zoals een pincode in combinatie met een hardware token of persoonlijk uniek certificaat (passkey).\n2. Wachtwoordtoegang in combinatie met minimaal een tweede factor.\n\nIndien MFA niet mogelijk is voor deze accounts, worden andere mitigerende maatregelen genomen.\n\nBij het nemen van mitigerende maatregelen wordt de CISO betrokken.\n\nDe proceseigenaar keurt de mitigerende maatregelen goed.\n\nWaar mogelijk en veilig wordt MFA met federatieve authenticatievoorzieningen zoals Single Sign On en een Stepping Stone-oplossing worden gecombineerd toegepast.\n\nVoor beheer en monitoring van authenticatiegegevens:\n\n- wordt authenticatie-informatie uitgegeven met formele vastgestelde procedures, nadat de identiteit van de gebruiker met voldoende zekerheid is vastgesteld;\n- worden Use Cases voor misbruik van authenticatiegegevens gedefinieerd, worden deze gemonitord en wordt passende actie ondernomen bij het optreden ervan. Deze Use Cases omvatten in ieder geval inlogpogingen van ongebruikelijke plekken en pieken in mislukte inlogpogingen.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#51701"
     },
     {
@@ -537,11 +537,11 @@
       "title": "Managing information security in the ICT supply chain (Gov. measure 5.21.05)",
       "title_nl": "Overheidsmaatregel 5.21.05",
       "description": "",
-      "description_nl": "De beveiliging van toeleveringsketens is onderdeel van de risicoanalyse voor de entiteit. In de risicoanalyse wordt rekening gehouden met:\n- specifieke kwetsbaarheden van elke rechtstreekse leverancier en dienstverlener;\n- de algemene kwaliteit van de producten;\n- de cyberbeveiligingspraktijken van hun leveranciers en dienstverleners, met inbegrip van hun veilige ontwikkelingsprocedures.",
+      "description_nl": "De beveiliging van toeleveringsketens is onderdeel van de risicoanalyse voor de entiteit. In de risicoanalyse wordt rekening gehouden met:\n\n- specifieke kwetsbaarheden van elke rechtstreekse leverancier en dienstverlener;\n- de algemene kwaliteit van de producten;\n- de cyberbeveiligingspraktijken van hun leveranciers en dienstverleners, met inbegrip van hun veilige ontwikkelingsprocedures.",
       "category": "Organizational controls",
       "level": "",
       "iso_mapping": "5.21",
-      "implementation_guidance": "De beveiliging van toeleveringsketens is onderdeel van de risicoanalyse voor de entiteit. In de risicoanalyse wordt rekening gehouden met:\n- specifieke kwetsbaarheden van elke rechtstreekse leverancier en dienstverlener;\n- de algemene kwaliteit van de producten;\n- de cyberbeveiligingspraktijken van hun leveranciers en dienstverleners, met inbegrip van hun veilige ontwikkelingsprocedures.",
+      "implementation_guidance": "De beveiliging van toeleveringsketens is onderdeel van de risicoanalyse voor de entiteit. In de risicoanalyse wordt rekening gehouden met:\n\n- specifieke kwetsbaarheden van elke rechtstreekse leverancier en dienstverlener;\n- de algemene kwaliteit van de producten;\n- de cyberbeveiligingspraktijken van hun leveranciers en dienstverleners, met inbegrip van hun veilige ontwikkelingsprocedures.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#52105"
     },
     {
@@ -549,11 +549,11 @@
       "title": "Monitoring, review and change management of supplier services (Gov. measure 5.22.01)",
       "title_nl": "Overheidsmaatregel 5.22.01",
       "description": "",
-      "description_nl": "Op basis van het door de leverancier aangeleverde bewijsmateriaal, zie overheidsmaatregel 5.20.03, is de proceseigenaar verantwoordelijk voor:\n- het jaarlijks beoordelen dat de leverancier voldoet aan de gestelde informatiebeveiligingseisen;\n- het vaststellen van eventuele beveiligingsrisico’s;\n- het (laten) nemen van mitigerende maatregelen en het accepteren van rest-risico’s.",
+      "description_nl": "Op basis van het door de leverancier aangeleverde bewijsmateriaal, zie overheidsmaatregel 5.20.03, is de proceseigenaar verantwoordelijk voor:\n\n- het jaarlijks beoordelen dat de leverancier voldoet aan de gestelde informatiebeveiligingseisen;\n- het vaststellen van eventuele beveiligingsrisico’s;\n- het (laten) nemen van mitigerende maatregelen en het accepteren van rest-risico’s.",
       "category": "Organizational controls",
       "level": "",
       "iso_mapping": "5.22",
-      "implementation_guidance": "Op basis van het door de leverancier aangeleverde bewijsmateriaal, zie overheidsmaatregel 5.20.03, is de proceseigenaar verantwoordelijk voor:\n- het jaarlijks beoordelen dat de leverancier voldoet aan de gestelde informatiebeveiligingseisen;\n- het vaststellen van eventuele beveiligingsrisico’s;\n- het (laten) nemen van mitigerende maatregelen en het accepteren van rest-risico’s.",
+      "implementation_guidance": "Op basis van het door de leverancier aangeleverde bewijsmateriaal, zie overheidsmaatregel 5.20.03, is de proceseigenaar verantwoordelijk voor:\n\n- het jaarlijks beoordelen dat de leverancier voldoet aan de gestelde informatiebeveiligingseisen;\n- het vaststellen van eventuele beveiligingsrisico’s;\n- het (laten) nemen van mitigerende maatregelen en het accepteren van rest-risico’s.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#52201"
     },
     {
@@ -657,11 +657,11 @@
       "title": "Information security incident management planning and preparation (Gov. measure 5.24.07)",
       "title_nl": "Overheidsmaatregel 5.24.07",
       "description": "",
-      "description_nl": "De incidentprocedure bevat tenminste:\n- dat binnen de wettelijke termijn informatiebeveiligingsincidenten worden gemeld bij het Cyber Security Incident Response Team (CSIRT);\n- dat meldingen van het CSIRT worden ontvangen, beoordeeld en opgenomen in de risicobehandeling;\n- dat betrokkenen binnen de wettelijke termijn op de hoogte gesteld worden van het incident.",
+      "description_nl": "De incidentprocedure bevat tenminste:\n\n- dat binnen de wettelijke termijn informatiebeveiligingsincidenten worden gemeld bij het Cyber Security Incident Response Team (CSIRT);\n- dat meldingen van het CSIRT worden ontvangen, beoordeeld en opgenomen in de risicobehandeling;\n- dat betrokkenen binnen de wettelijke termijn op de hoogte gesteld worden van het incident.",
       "category": "Organizational controls",
       "level": "",
       "iso_mapping": "5.24",
-      "implementation_guidance": "De incidentprocedure bevat tenminste:\n- dat binnen de wettelijke termijn informatiebeveiligingsincidenten worden gemeld bij het Cyber Security Incident Response Team (CSIRT);\n- dat meldingen van het CSIRT worden ontvangen, beoordeeld en opgenomen in de risicobehandeling;\n- dat betrokkenen binnen de wettelijke termijn op de hoogte gesteld worden van het incident.",
+      "implementation_guidance": "De incidentprocedure bevat tenminste:\n\n- dat binnen de wettelijke termijn informatiebeveiligingsincidenten worden gemeld bij het Cyber Security Incident Response Team (CSIRT);\n- dat meldingen van het CSIRT worden ontvangen, beoordeeld en opgenomen in de risicobehandeling;\n- dat betrokkenen binnen de wettelijke termijn op de hoogte gesteld worden van het incident.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#52407"
     },
     {
@@ -1233,11 +1233,11 @@
       "title": "User endpoint devices (Gov. measure 8.01.02)",
       "title_nl": "Overheidsmaatregel 8.01.02",
       "description": "",
-      "description_nl": "Bij de inzet van mobiele apparatuur zijn minimaal de volgende aspecten geïmplementeerd: \n- Het apparaat maakt deel uit van patchmanagement en hardening. \n- Er wordt gebruik gemaakt van Mobile Device Management (MDM)- of Mobile Application Management (MAM)-oplossingen. \n- Gebruikers tekenen een gebruikersovereenkomst voor mobiel werken, waarmee zij verklaren zich bewust te zijn van de gevaren van mobiel werken en verklaren dit veilig te zullen doen. Deze verklaring heeft betrekking op alle mobiele apparatuur die de medewerker zakelijk gebruikt.\n\nPeriodiek wordt getoetst of deze drie aspecten worden nageleefd.",
+      "description_nl": "Bij de inzet van mobiele apparatuur zijn minimaal de volgende aspecten geïmplementeerd:\n\n- Het apparaat maakt deel uit van patchmanagement en hardening.\n- Er wordt gebruik gemaakt van Mobile Device Management (MDM)- of Mobile Application Management (MAM)-oplossingen.\n- Gebruikers tekenen een gebruikersovereenkomst voor mobiel werken, waarmee zij verklaren zich bewust te zijn van de gevaren van mobiel werken en verklaren dit veilig te zullen doen. Deze verklaring heeft betrekking op alle mobiele apparatuur die de medewerker zakelijk gebruikt.\n\nPeriodiek wordt getoetst of deze drie aspecten worden nageleefd.",
       "category": "Technological controls",
       "level": "",
       "iso_mapping": "8.1",
-      "implementation_guidance": "Bij de inzet van mobiele apparatuur zijn minimaal de volgende aspecten geïmplementeerd: \n- Het apparaat maakt deel uit van patchmanagement en hardening. \n- Er wordt gebruik gemaakt van Mobile Device Management (MDM)- of Mobile Application Management (MAM)-oplossingen. \n- Gebruikers tekenen een gebruikersovereenkomst voor mobiel werken, waarmee zij verklaren zich bewust te zijn van de gevaren van mobiel werken en verklaren dit veilig te zullen doen. Deze verklaring heeft betrekking op alle mobiele apparatuur die de medewerker zakelijk gebruikt.\n\nPeriodiek wordt getoetst of deze drie aspecten worden nageleefd.",
+      "implementation_guidance": "Bij de inzet van mobiele apparatuur zijn minimaal de volgende aspecten geïmplementeerd:\n\n- Het apparaat maakt deel uit van patchmanagement en hardening.\n- Er wordt gebruik gemaakt van Mobile Device Management (MDM)- of Mobile Application Management (MAM)-oplossingen.\n- Gebruikers tekenen een gebruikersovereenkomst voor mobiel werken, waarmee zij verklaren zich bewust te zijn van de gevaren van mobiel werken en verklaren dit veilig te zullen doen. Deze verklaring heeft betrekking op alle mobiele apparatuur die de medewerker zakelijk gebruikt.\n\nPeriodiek wordt getoetst of deze drie aspecten worden nageleefd.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#80102"
     },
     {
@@ -1353,11 +1353,11 @@
       "title": "Protection against malware (Gov. measure 8.07.04)",
       "title_nl": "Overheidsmaatregel 8.07.04",
       "description": "",
-      "description_nl": "De malwarescan wordt uitgevoerd op:\n- alle omgevingen, bijvoorbeeld op (mail)servers, (desktop)computers en bij de toegangsverlening tot het netwerk van de entiteit;\n- alle gedownloade content voorafgaand aan executie of opslag;\n- alle bestanden die via netwerken of via elke vorm van opslagmedium zijn ontvangen, vóór gebruik of opslag in de eigen omgeving.",
+      "description_nl": "De malwarescan wordt uitgevoerd op:\n\n- alle omgevingen, bijvoorbeeld op (mail)servers, (desktop)computers en bij de toegangsverlening tot het netwerk van de entiteit;\n- alle gedownloade content voorafgaand aan executie of opslag;\n- alle bestanden die via netwerken of via elke vorm van opslagmedium zijn ontvangen, vóór gebruik of opslag in de eigen omgeving.",
       "category": "Technological controls",
       "level": "",
       "iso_mapping": "8.7",
-      "implementation_guidance": "De malwarescan wordt uitgevoerd op:\n- alle omgevingen, bijvoorbeeld op (mail)servers, (desktop)computers en bij de toegangsverlening tot het netwerk van de entiteit;\n- alle gedownloade content voorafgaand aan executie of opslag;\n- alle bestanden die via netwerken of via elke vorm van opslagmedium zijn ontvangen, vóór gebruik of opslag in de eigen omgeving.",
+      "implementation_guidance": "De malwarescan wordt uitgevoerd op:\n\n- alle omgevingen, bijvoorbeeld op (mail)servers, (desktop)computers en bij de toegangsverlening tot het netwerk van de entiteit;\n- alle gedownloade content voorafgaand aan executie of opslag;\n- alle bestanden die via netwerken of via elke vorm van opslagmedium zijn ontvangen, vóór gebruik of opslag in de eigen omgeving.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#80704"
     },
     {
@@ -1365,11 +1365,11 @@
       "title": "Management of technical vulnerabilities (Gov. measure 8.08.01)",
       "title_nl": "Overheidsmaatregel 8.08.01",
       "description": "",
-      "description_nl": "Als van een kwetsbaarheidswaarschuwing de kans op misbruik en de verwachte schade beide hoog zijn, worden passende mitigerende maatregelen zo snel mogelijk, maar \nuiterlijk binnen een week getroffen.",
+      "description_nl": "Als van een kwetsbaarheidswaarschuwing de kans op misbruik en de verwachte schade beide hoog zijn, worden passende mitigerende maatregelen zo snel mogelijk, maar uiterlijk binnen een week getroffen.",
       "category": "Technological controls",
       "level": "",
       "iso_mapping": "8.8",
-      "implementation_guidance": "Als van een kwetsbaarheidswaarschuwing de kans op misbruik en de verwachte schade beide hoog zijn, worden passende mitigerende maatregelen zo snel mogelijk, maar \nuiterlijk binnen een week getroffen.",
+      "implementation_guidance": "Als van een kwetsbaarheidswaarschuwing de kans op misbruik en de verwachte schade beide hoog zijn, worden passende mitigerende maatregelen zo snel mogelijk, maar uiterlijk binnen een week getroffen.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#80801"
     },
     {
@@ -1545,11 +1545,11 @@
       "title": "Logging (Gov. measure 8.15.01)",
       "title_nl": "Overheidsmaatregel 8.15.01",
       "description": "",
-      "description_nl": "Een logregel bevat minimaal:\n- Actie: de gebeurtenis of handeling die heeft plaatsgevonden.\n- Object: waarop de gebeurtenis of handeling effect had (bijvoorbeeld welk bestand, proces of systeem).\n- Resultaat: het resultaat van de gebeurtenis of handeling.\n- Oorsprong: het apparaat of de netwerklocatie van waaruit de gebeurtenis of handeling in gang is gezet.\n- Actor: identificatie van de persoon die of het proces dat de gebeurtenis in gang heeft gezet.\n- Tijdstempel: datum en tijdstip waarop de gebeurtenis of handeling plaatsvond.",
+      "description_nl": "Een logregel bevat minimaal:\n\n- Actie: de gebeurtenis of handeling die heeft plaatsgevonden.\n- Object: waarop de gebeurtenis of handeling effect had (bijvoorbeeld welk bestand, proces of systeem).\n- Resultaat: het resultaat van de gebeurtenis of handeling.\n- Oorsprong: het apparaat of de netwerklocatie van waaruit de gebeurtenis of handeling in gang is gezet.\n- Actor: identificatie van de persoon die of het proces dat de gebeurtenis in gang heeft gezet.\n- Tijdstempel: datum en tijdstip waarop de gebeurtenis of handeling plaatsvond.",
       "category": "Technological controls",
       "level": "",
       "iso_mapping": "8.15",
-      "implementation_guidance": "Een logregel bevat minimaal:\n- Actie: de gebeurtenis of handeling die heeft plaatsgevonden.\n- Object: waarop de gebeurtenis of handeling effect had (bijvoorbeeld welk bestand, proces of systeem).\n- Resultaat: het resultaat van de gebeurtenis of handeling.\n- Oorsprong: het apparaat of de netwerklocatie van waaruit de gebeurtenis of handeling in gang is gezet.\n- Actor: identificatie van de persoon die of het proces dat de gebeurtenis in gang heeft gezet.\n- Tijdstempel: datum en tijdstip waarop de gebeurtenis of handeling plaatsvond.",
+      "implementation_guidance": "Een logregel bevat minimaal:\n\n- Actie: de gebeurtenis of handeling die heeft plaatsgevonden.\n- Object: waarop de gebeurtenis of handeling effect had (bijvoorbeeld welk bestand, proces of systeem).\n- Resultaat: het resultaat van de gebeurtenis of handeling.\n- Oorsprong: het apparaat of de netwerklocatie van waaruit de gebeurtenis of handeling in gang is gezet.\n- Actor: identificatie van de persoon die of het proces dat de gebeurtenis in gang heeft gezet.\n- Tijdstempel: datum en tijdstip waarop de gebeurtenis of handeling plaatsvond.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#81501"
     },
     {
@@ -1737,11 +1737,11 @@
       "title": "Security of network services (Gov. measure 8.21.01)",
       "title_nl": "Overheidsmaatregel 8.21.01",
       "description": "",
-      "description_nl": "In koppelpunten met externe of onvertrouwde zones en vanwege netwerksegmentatie zijn maatregelen getroffen om mogelijke aanvallen die de beschikbaarheid van de \ninformatievoorziening negatief beïnvloeden te signaleren en te mitigeren.",
+      "description_nl": "In koppelpunten met externe of onvertrouwde zones en vanwege netwerksegmentatie zijn maatregelen getroffen om mogelijke aanvallen die de beschikbaarheid van de informatievoorziening negatief beïnvloeden te signaleren en te mitigeren.",
       "category": "Technological controls",
       "level": "",
       "iso_mapping": "8.21",
-      "implementation_guidance": "In koppelpunten met externe of onvertrouwde zones en vanwege netwerksegmentatie zijn maatregelen getroffen om mogelijke aanvallen die de beschikbaarheid van de \ninformatievoorziening negatief beïnvloeden te signaleren en te mitigeren.",
+      "implementation_guidance": "In koppelpunten met externe of onvertrouwde zones en vanwege netwerksegmentatie zijn maatregelen getroffen om mogelijke aanvallen die de beschikbaarheid van de informatievoorziening negatief beïnvloeden te signaleren en te mitigeren.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#82101"
     },
     {
@@ -1809,11 +1809,11 @@
       "title": "Use of cryptography (Gov. measure 8.24.01)",
       "title_nl": "Overheidsmaatregel 8.24.01",
       "description": "",
-      "description_nl": "In het cryptografiebeleid zijn minimaal de volgende onderwerpen uitgewerkt:\n- Wanneer cryptografie ingezet wordt.\n- Wie verantwoordelijk is voor de implementatie.\n- Wie verantwoordelijk is voor het sleutelbeheer.\n- Hoe geregistreerd wordt waar welke cryptografie toegepast wordt.\n- Welke normen als basis dienen voor cryptografie en de wijze waarop de passende normen van het Forum Standaardisatie worden toegepast.\n- De wijze waarop het beschermingsniveau vastgesteld wordt.\n- Bij communicatie tussen entiteiten wordt het beleid onderling vastgesteld.",
+      "description_nl": "In het cryptografiebeleid zijn minimaal de volgende onderwerpen uitgewerkt:\n\n- Wanneer cryptografie ingezet wordt.\n- Wie verantwoordelijk is voor de implementatie.\n- Wie verantwoordelijk is voor het sleutelbeheer.\n- Hoe geregistreerd wordt waar welke cryptografie toegepast wordt.\n- Welke normen als basis dienen voor cryptografie en de wijze waarop de passende normen van het Forum Standaardisatie worden toegepast.\n- De wijze waarop het beschermingsniveau vastgesteld wordt.\n- Bij communicatie tussen entiteiten wordt het beleid onderling vastgesteld.",
       "category": "Technological controls",
       "level": "",
       "iso_mapping": "8.24",
-      "implementation_guidance": "In het cryptografiebeleid zijn minimaal de volgende onderwerpen uitgewerkt:\n- Wanneer cryptografie ingezet wordt.\n- Wie verantwoordelijk is voor de implementatie.\n- Wie verantwoordelijk is voor het sleutelbeheer.\n- Hoe geregistreerd wordt waar welke cryptografie toegepast wordt.\n- Welke normen als basis dienen voor cryptografie en de wijze waarop de passende normen van het Forum Standaardisatie worden toegepast.\n- De wijze waarop het beschermingsniveau vastgesteld wordt.\n- Bij communicatie tussen entiteiten wordt het beleid onderling vastgesteld.",
+      "implementation_guidance": "In het cryptografiebeleid zijn minimaal de volgende onderwerpen uitgewerkt:\n\n- Wanneer cryptografie ingezet wordt.\n- Wie verantwoordelijk is voor de implementatie.\n- Wie verantwoordelijk is voor het sleutelbeheer.\n- Hoe geregistreerd wordt waar welke cryptografie toegepast wordt.\n- Welke normen als basis dienen voor cryptografie en de wijze waarop de passende normen van het Forum Standaardisatie worden toegepast.\n- De wijze waarop het beschermingsniveau vastgesteld wordt.\n- Bij communicatie tussen entiteiten wordt het beleid onderling vastgesteld.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#82401"
     },
     {
@@ -1965,11 +1965,11 @@
       "title": "Change management (Gov. measure 8.32.01)",
       "title_nl": "Overheidsmaatregel 8.32.01",
       "description": "",
-      "description_nl": "In het wijzigingsbeheerproces is minimaal aandacht besteed aan:\n- het administreren van wijzigingen, met de resultaten van het testplan;\n- een risicoafweging van mogelijke gevolgen van de wijzigingen, inclusief een beschreven rollback-plan;\n- de goedkeuringsprocedure voor wijzigingen.",
+      "description_nl": "In het wijzigingsbeheerproces is minimaal aandacht besteed aan:\n\n- het administreren van wijzigingen, met de resultaten van het testplan;\n- een risicoafweging van mogelijke gevolgen van de wijzigingen, inclusief een beschreven rollback-plan;\n- de goedkeuringsprocedure voor wijzigingen.",
       "category": "Technological controls",
       "level": "",
       "iso_mapping": "8.32",
-      "implementation_guidance": "In het wijzigingsbeheerproces is minimaal aandacht besteed aan:\n- het administreren van wijzigingen, met de resultaten van het testplan;\n- een risicoafweging van mogelijke gevolgen van de wijzigingen, inclusief een beschreven rollback-plan;\n- de goedkeuringsprocedure voor wijzigingen.",
+      "implementation_guidance": "In het wijzigingsbeheerproces is minimaal aandacht besteed aan:\n\n- het administreren van wijzigingen, met de resultaten van het testplan;\n- een risicoafweging van mogelijke gevolgen van de wijzigingen, inclusief een beschreven rollback-plan;\n- de goedkeuringsprocedure voor wijzigingen.",
       "source_url": "https://minbzk.github.io/Baseline-Informatiebeveiliging-Overheid/maatregelen/#83201"
     },
     {
@@ -2010,7 +2010,7 @@
     }
   ],
   "metadata": {
-    "ingested_at": "2026-03-30T19:43:38.656Z",
+    "ingested_at": "2026-04-01T05:24:26.214Z",
     "source_repo": "https://github.com/MinBZK/Baseline-Informatiebeveiliging-Overheid.git",
     "source_file": "docs/maatregelen/index.md",
     "total_controls": 166,

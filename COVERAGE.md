@@ -1,6 +1,6 @@
 # Coverage — Dutch Standards MCP
 
-> Last verified: 2026-03-30 | Database version: 0.1.0
+> Last verified: 2026-04-01 | Database version: 0.1.0
 
 This document declares exactly what data the Dutch Standards MCP contains, what it does not contain, and the limitations of each source. It is the contract with users.
 
