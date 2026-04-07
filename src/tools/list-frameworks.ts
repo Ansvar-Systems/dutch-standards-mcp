@@ -1,4 +1,5 @@
 // src/tools/list-frameworks.ts
+import { buildCitation } from '../citation-universal.js';
 import { getDb } from '../db.js';
 import { successResponse } from '../response-meta.js';
 import type { Framework } from '../types.js';
@@ -55,5 +56,14 @@ export function handleListFrameworks() {
     );
   }
 
-  return successResponse(lines.join('\n'));
+  const _citations = rows.map((row) =>
+    buildCitation(
+      row.name,
+      row.name_nl ?? row.name,
+      'get_framework',
+      { framework_id: row.id },
+    ),
+  );
+
+  return { ...successResponse(lines.join('\n')), _citations };
 }

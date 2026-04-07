@@ -1,3 +1,4 @@
+import { buildCitation } from '../citation-universal.js';
 // src/tools/get-control.ts
 import { getDb } from '../db.js';
 import { successResponse, errorResponse } from '../response-meta.js';
@@ -116,5 +117,13 @@ export function handleGetControl(args: { control_id?: string }) {
     lines.push(`**Source:** ${row.source_url}`);
   }
 
-  return successResponse(lines.join('\n'));
+  const _citation = buildCitation(
+    `${row.framework_name} ${row.control_number}`,
+    `${row.control_number} — ${row.title_nl ?? row.title}`,
+    'get_control',
+    { control_id: control_id.trim() },
+    row.source_url ?? null,
+    row.title && row.title !== row.title_nl ? [row.title] : [],
+  );
+  return { ...successResponse(lines.join('\n')), _citation };
 }

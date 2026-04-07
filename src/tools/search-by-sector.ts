@@ -1,4 +1,5 @@
 // src/tools/search-by-sector.ts
+import { buildCitation } from '../citation-universal.js';
 import { getDb } from '../db.js';
 import { successResponse, errorResponse } from '../response-meta.js';
 
@@ -161,5 +162,14 @@ export function handleSearchBySector(args: { sector?: string; query?: string }) 
     }
   }
 
-  return successResponse(lines.join('\n'));
+  const _citations = frameworkRows.map((row) =>
+    buildCitation(
+      row.name,
+      row.name_nl ?? row.name,
+      'get_framework',
+      { framework_id: row.id },
+    ),
+  );
+
+  return { ...successResponse(lines.join('\n')), _citations };
 }

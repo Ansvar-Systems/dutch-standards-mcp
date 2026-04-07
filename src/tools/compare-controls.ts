@@ -1,4 +1,5 @@
 // src/tools/compare-controls.ts
+import { buildCitation } from '../citation-universal.js';
 import { getDb } from '../db.js';
 import { successResponse, errorResponse } from '../response-meta.js';
 
@@ -74,6 +75,7 @@ export function handleCompareControls(args: {
   `;
 
   const lines: string[] = [];
+  const allRows: Array<CompareControlsRow & { frameworkId: string }> = [];
   lines.push(`## Cross-Framework Comparison — "${query}"`);
   lines.push('');
 
@@ -92,6 +94,7 @@ export function handleCompareControls(args: {
       lines.push('_No matching controls found._');
     } else {
       for (const row of rows) {
+        allRows.push({ ...row, frameworkId });
         const snippet = row.description_nl
           ? row.description_nl.length > SNIPPET_LENGTH
             ? row.description_nl.slice(0, SNIPPET_LENGTH) + '…'
@@ -108,5 +111,14 @@ export function handleCompareControls(args: {
     lines.push('');
   }
 
-  return successResponse(lines.join('\n'));
+  const _citations = allRows.map((row) =>
+    buildCitation(
+      `${row.frameworkId} ${row.control_number}`,
+      `${row.control_number} — ${row.title_nl}`,
+      'get_control',
+      { control_id: row.id },
+    ),
+  );
+
+  return { ...successResponse(lines.join('\n')), _citations };
 }
