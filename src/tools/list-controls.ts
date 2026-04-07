@@ -1,4 +1,5 @@
 // src/tools/list-controls.ts
+import { buildCitation } from '../citation-universal.js';
 import { getDb } from '../db.js';
 import { successResponse, errorResponse } from '../response-meta.js';
 import type { Control } from '../types.js';
@@ -97,5 +98,14 @@ export function handleListControls(args: {
     );
   }
 
-  return successResponse(lines.join('\n'));
+  const _citations = rows.map((row) =>
+    buildCitation(
+      `${fwId} ${row.control_number}`,
+      `${row.control_number} — ${(useEnglish ? (row.title ?? row.title_nl) : (row.title_nl ?? row.title)) ?? ''}`,
+      'get_control',
+      { control_id: row.id },
+    ),
+  );
+
+  return { ...successResponse(lines.join('\n')), _citations };
 }

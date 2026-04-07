@@ -1,4 +1,5 @@
 // src/tools/get-iso-mapping.ts
+import { buildCitation } from '../citation-universal.js';
 import { getDb } from '../db.js';
 import { successResponse, errorResponse } from '../response-meta.js';
 
@@ -76,5 +77,14 @@ export function handleGetIsoMapping(args: { iso_control?: string }) {
     }
   }
 
-  return successResponse(lines.join('\n'));
+  const _citations = rows.map((row) =>
+    buildCitation(
+      `${row.framework_id} ${row.control_number}`,
+      `${row.control_number} — ${row.title_nl ?? row.title ?? ''}`,
+      'get_control',
+      { control_id: row.id },
+    ),
+  );
+
+  return { ...successResponse(lines.join('\n')), _citations };
 }

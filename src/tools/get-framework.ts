@@ -1,4 +1,5 @@
 // src/tools/get-framework.ts
+import { buildCitation } from '../citation-universal.js';
 import { getDb } from '../db.js';
 import { successResponse, errorResponse } from '../response-meta.js';
 import type { Framework } from '../types.js';
@@ -112,5 +113,14 @@ export function handleGetFramework(args: { framework_id?: string }) {
     lines.push(`**Source:** ${row.source_url}`);
   }
 
-  return successResponse(lines.join('\n'));
+  const _citation = buildCitation(
+    row.name,
+    displayName,
+    'get_framework',
+    { framework_id: framework_id.trim() },
+    row.source_url ?? null,
+    row.name_nl && row.name !== row.name_nl ? [row.name_nl] : [],
+  );
+
+  return { ...successResponse(lines.join('\n')), _citation };
 }
